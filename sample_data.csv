@@ -1,0 +1,901 @@
+name,gradeLevel,formattedAddress,latitude,longitude,neighbourhood,zipcode
+Julia White,4,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+Sam Hill,2,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Julia Allen,4,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Lily Brown,3,"513 Thornton Street, Portsmouth, New Hampshire 03801, United States",43.073227,-70.776532,Christian Shore,03801
+Paula Garcia,1,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Sam Allen,2,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Charlie Adams,3,"230 Lafayette Road, Portsmouth, New Hampshire 03801, United States",43.062069,-70.768922,Lafayette Park,03801
+Kevin Green,3,"12 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.072891,-70.76138,Richards Avenue Area,03801
+Lily Davis,5,"719 Pleasant Street, Portsmouth, New Hampshire 03801, United States",43.073122,-70.750898,South End,03801
+Alice Garcia,4,"808 Bridge Street, Manchester, New Hampshire 03104, United States",42.993681,-71.425255,Eaton Heights,03104
+Michael Lee,2,"1763 Union Street, Manchester, New Hampshire 03104, United States",43.033263,-71.46285,North End,03104
+Rachel Adams,5,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+George White,2,"1953 Islington Street, Portsmouth, New Hampshire 03801, United States",43.057581,-70.785436,Portsmouth Plains,03801
+Charlie Wilson,4,"New Castle Avenue, Portsmouth, New Hampshire 03801, United States",43.070468,-70.745669,Little Harbor,03801
+Nancy Wilson,3,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Rachel Brown,4,"South Street, Portsmouth, New Hampshire 03801, United States",43.0658175,-70.7597385,Lincoln,03801
+Oliver Garcia,2,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Lily Adams,3,"12 Kane Street, Portsmouth, New Hampshire 03801, United States",43.07886,-70.770083,Christian Shore,03801
+Fiona Clark,1,"210 Deer Street, Portsmouth, New Hampshire 03801, United States",43.078838,-70.76054,North End,03801
+Oliver Johnson,3,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+George Baker,1,"152 Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074667,-70.75007,South End,03801
+Paula Hill,2,"354 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.073066,-70.750793,South End,03801
+Fiona Reed,1,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Rachel Allen,5,"Brackett Lane, Portsmouth, New Hampshire 03801, United States",43.068337,-70.754319,Little Harbor,03801
+Nancy Scott,2,"245 Russell Street, Manchester, New Hampshire 03104, United States",43.004857,-71.452239,Straw,03104
+Bob Smith,1,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Hannah Kim,2,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Sam Harris,5,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Oliver Kim,1,"127 Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040466,-70.772091,Elwyn Park,03801
+Bob Clark,3,"797 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.070836,-70.749646,South End,03801
+Quincy Brown,4,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Daisy Turner,4,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Charlie Adams,3,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Lily Hill,5,"Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.0698125,-70.7593955,Richards Avenue Area,03801
+Julia White,4,"216 Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.066865,-70.770539,Lafayette Park,03801
+Daisy Clark,4,"Congress Street, Portsmouth, New Hampshire 03801, United States",43.076422,-70.759307,Downtown,03801
+Isaac Allen,1,"605 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.064197,-70.762623,Wibird Area,03801
+Bob Smith,4,"428 Union Street, Portsmouth, New Hampshire 03801, United States",43.067745,-70.76285,Wibird Area,03801
+Oliver Allen,1,"677 Miller Avenue, Portsmouth, New Hampshire 03801, United States",43.066161,-70.75798,Lincoln,03801
+George Hill,2,"93 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.067901,-70.764324,Wibird Area,03801
+Alice Davis,2,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Ethan Clark,3,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Tina Reed,3,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Oliver Garcia,3,"1066 Maplewood Avenue, Portsmouth, New Hampshire 03801, United States",43.081995,-70.781235,Frank Jones Farm,03801
+Quincy Reed,4,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Ethan Smith,4,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Rachel Allen,2,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Paula Hill,4,"824 Court Street, Portsmouth, New Hampshire 03801, United States",43.077138,-70.753054,Downtown,03801
+Alice Adams,3,"187 Austin Street, Portsmouth, New Hampshire 03801, United States",43.071694,-70.764659,Goodwin Park,03801
+Paula Reed,4,"136 Austin Street, Portsmouth, New Hampshire 03801, United States",43.072464,-70.763232,Goodwin Park,03801
+Oliver Hill,4,"Pearl Street, Portsmouth, New Hampshire 03801, United States",43.07548,-70.76303,Islington Creek,03801
+Julia Turner,3,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Rachel Reed,5,"Spinney Road, Portsmouth, New Hampshire 03801, United States",43.0645575,-70.77424,Lafayette Park,03801
+Paula Allen,4,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+George Brown,4,"1034 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.053325,-70.778835,Portsmouth Plains,03801
+Paula Clark,5,"886 Court Street, Portsmouth, New Hampshire 03801, United States",43.077161,-70.753005,Downtown,03801
+Bob Green,3,"Wibird Street, Portsmouth, New Hampshire 03801, United States",43.0666105,-70.763359,Wibird Area,03801
+Fiona Garcia,4,"43 Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074552,-70.75044,South End,03801
+Hannah Scott,3,"487 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082396,-70.770839,Cutts Cove,03801
+Tina Baker,3,"343 Broad Street, Portsmouth, New Hampshire 03801, United States",43.065504,-70.758789,Broad Street,03801
+Rachel Harris,4,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Quincy Garcia,3,"401 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082397,-70.770904,Cutts Cove,03801
+Quincy Miller,3,"Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.0698125,-70.7593955,Richards Avenue Area,03801
+Kevin Lee,2,"1998 Bridge Street, Manchester, New Hampshire 03104, United States",42.994171,-71.403808,Youngsville,03104
+Oliver Kim,2,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Sam Hill,5,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Paula Kim,5,"619 High Street, Portsmouth, New Hampshire 03801, United States",43.079036,-70.759896,North End,03801
+Kevin Brown,4,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Bob Hill,1,"1089 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.070866,-70.749662,South End,03801
+Hannah Reed,3,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Nancy Brown,5,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Alice Harris,4,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Charlie Garcia,2,"1902 Islington Street, Portsmouth, New Hampshire 03801, United States",43.057693,-70.785424,Portsmouth Plains,03801
+Tina Reed,3,"1036 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.070866,-70.749662,South End,03801
+Daisy Miller,4,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Ethan Allen,3,"Wibird Street, Portsmouth, New Hampshire 03801, United States",43.0666105,-70.763359,Wibird Area,03801
+Paula Allen,4,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Fiona Green,4,"Granite Street, Portsmouth, New Hampshire 03801, United States",43.0855095,-70.7863505,Frank Jones Farm,03801
+Kevin Green,3,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Kevin White,2,"Spinney Road, Portsmouth, New Hampshire 03801, United States",43.0645575,-70.77424,Lafayette Park,03801
+Michael Reed,5,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Sam Reed,3,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Kevin Reed,1,"62 Hancock Street, Portsmouth, New Hampshire 03801, United States",43.074862,-70.753641,South End,03801
+Isaac Miller,4,"New Castle Avenue, Portsmouth, New Hampshire 03801, United States",43.070468,-70.745669,Little Harbor,03801
+Ethan Brown,3,"1605 Maplewood Avenue, Portsmouth, New Hampshire 03801, United States",43.082765,-70.784681,Frank Jones Farm,03801
+Kevin Hill,5,"385 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.068247,-70.75807,Richards Avenue Area,03801
+Alice Johnson,4,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Daisy Davis,3,"968 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.066662,-70.767044,Wibird Area,03801
+Isaac Davis,5,"1380 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.051303,-70.747936,Sagamore Grove,03801
+Charlie Brown,4,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Ethan Garcia,3,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Kevin Garcia,4,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Oliver Adams,4,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Charlie Hill,1,"Chestnut Street, Portsmouth, New Hampshire 03801, United States",43.0757385,-70.759677,Downtown,03801
+Paula Smith,5,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Charlie Davis,5,"Madison Street, Portsmouth, New Hampshire 03801, United States",43.07045,-70.765807,Goodwin Park,03801
+Ethan Reed,2,"1271 Union Street, Manchester, New Hampshire 03104, United States",43.019024,-71.462219,North End,03104
+Daisy Wilson,4,"277 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082851,-70.769595,Cutts Cove,03801
+Lily Green,5,"822 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.064055,-70.762547,Wibird Area,03801
+Julia Harris,4,"537 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.067258,-70.757354,Richards Avenue Area,03801
+George White,4,"836 Court Street, Portsmouth, New Hampshire 03801, United States",43.077142,-70.753044,South End,03801
+Hannah Harris,5,"960 Middle Street, Portsmouth, New Hampshire 03801, United States",43.064602,-70.767277,Lafayette Park,03801
+Kevin Harris,4,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Julia Wilson,2,"170 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.065002,-70.774833,Lafayette Park,03801
+Isaac Turner,3,"Cabot Street, Portsmouth, New Hampshire 03801, United States",43.072342,-70.7652100192308,Goodwin Park,03801
+Isaac White,1,"1030 Granite Street, Manchester, New Hampshire 03102, United States",42.982858,-71.480043,Piscataquog,03102
+Kevin Green,3,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Isaac Green,2,"290 Austin Street, Portsmouth, New Hampshire 03801, United States",43.070756,-70.765886,Goodwin Park,03801
+Rachel Harris,1,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+Daisy Miller,4,"610 Broad Street, Portsmouth, New Hampshire 03801, United States",43.062102,-70.75659,Broad Street,03801
+Fiona Clark,4,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Bob Kim,1,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Daisy Allen,3,"Pearl Street, Portsmouth, New Hampshire 03801, United States",43.07548,-70.76303,Islington Creek,03801
+Kevin Allen,3,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Ethan Adams,3,"179 Maple Street, Portsmouth, New Hampshire 03801, United States",43.081292,-70.784814,Frank Jones Farm,03801
+Julia Kim,1,"613 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.064192,-70.76262,Wibird Area,03801
+Bob Kim,1,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Bob Green,5,"947 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082407,-70.771564,Cutts Cove,03801
+Fiona Davis,5,"Summit Dr, Portsmouth, New Hampshire 03811, United States",43.074839,-70.764804,Islington Creek,03811
+Fiona Miller,1,"1489 Bridge Street, Manchester, New Hampshire 03104, United States",42.994228,-71.404156,Youngsville,03104
+Lily Kim,4,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Oliver Green,5,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Ethan Kim,3,"886 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.066883,-70.757099,Richards Avenue Area,03801
+Lily Lee,1,"368 Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069237,-70.761539,Lincoln,03801
+Quincy Adams,5,"103 Brewster Street, Portsmouth, New Hampshire 03801, United States",43.075524,-70.765271,Islington Creek,03801
+Tina Adams,1,"1312 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.051482,-70.747885,Sagamore Grove,03801
+George Baker,3,"Marcy Street, Portsmouth, New Hampshire 03801, United States",43.0737915,-70.751238,South End,03801
+Tina Baker,5,"426 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.064332,-70.762696,Wibird Area,03801
+Quincy Reed,1,"657 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.053383,-70.778726,Portsmouth Plains,03801
+Paula Baker,5,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Tina Johnson,4,"318 Islington Street, Portsmouth, New Hampshire 03801, United States",43.073138,-70.766358,Islington Creek,03801
+Sam Smith,3,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Isaac Lee,2,"Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.0679975,-70.7610185,Lincoln,03801
+George Allen,1,"91 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082962,-70.769406,Cutts Cove,03801
+Ethan Clark,5,"Cabot Street, Portsmouth, New Hampshire 03801, United States",43.072342,-70.7652100192308,Goodwin Park,03801
+Daisy Johnson,2,"658 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.066696,-70.766756,Wibird Area,03801
+Ethan White,5,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Tina Miller,4,"Wibird Street, Portsmouth, New Hampshire 03801, United States",43.0666105,-70.763359,Wibird Area,03801
+Rachel Brown,2,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Nancy Lee,1,"432 Thornton Street, Manchester, New Hampshire 03102, United States",42.991626,-71.483739,Notre Dame,03102
+Nancy Miller,1,"257 Thornton Street, Manchester, New Hampshire 03102, United States",42.988861,-71.483131,Notre Dame,03102
+Julia Scott,2,"Miller Avenue, Portsmouth, New Hampshire 03801, United States",43.06878,-70.75991,Lincoln,03801
+Bob Johnson,5,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Quincy White,3,"Miller Avenue, Portsmouth, New Hampshire 03801, United States",43.06878,-70.75991,Lincoln,03801
+Tina Hill,3,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Julia Adams,5,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Ethan Kim,3,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Bob White,4,"Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.0679975,-70.7610185,Lincoln,03801
+Alice Smith,5,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Bob Miller,1,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Kevin Turner,1,"835 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.07082,-70.749638,South End,03801
+Isaac Allen,1,"Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.0698125,-70.7593955,Richards Avenue Area,03801
+Fiona Clark,2,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Nancy Allen,3,"831 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.070821,-70.749639,South End,03801
+Rachel Clark,5,"402 Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069261,-70.761481,Lincoln,03801
+Tina Wilson,2,"732 Thornton Street, Portsmouth, New Hampshire 03801, United States",43.073354,-70.776444,Christian Shore,03801
+Tina White,2,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Sam Hill,4,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Bob Davis,5,"1206 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.084645,-70.786951,Frank Jones Farm,03801
+George Baker,5,"Marcy Street, Portsmouth, New Hampshire 03801, United States",43.0737915,-70.751238,South End,03801
+Nancy Clark,1,"396 Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069212,-70.761603,Lincoln,03801
+Kevin Clark,5,"Marcy Street, Portsmouth, New Hampshire 03801, United States",43.0737915,-70.751238,South End,03801
+Paula Adams,1,"Middle Street, Portsmouth, New Hampshire 03801, United States",43.07011,-70.76412,Goodwin Park,03801
+Oliver Hill,2,"Marcy Street, Portsmouth, New Hampshire 03801, United States",43.0737915,-70.751238,South End,03801
+Paula Harris,3,"958 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.062581,-70.772924,Lafayette Park,03801
+George Miller,4,"Middle Street, Portsmouth, New Hampshire 03801, United States",43.075487,-70.7603143333333,Downtown,03801
+Oliver Wilson,4,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Charlie Allen,5,"859 High Street, Portsmouth, New Hampshire 03801, United States",43.079068,-70.759935,Downtown,03801
+Daisy Johnson,4,"527 Union Street, Portsmouth, New Hampshire 03801, United States",43.066485,-70.7623,Wibird Area,03801
+Ethan Baker,5,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Fiona Adams,1,"Lincoln, Portsmouth, New Hampshire, United States",43.070606,-70.763289,Lincoln,03801
+Paula Davis,3,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Quincy Baker,1,"1951 Union Street, Manchester, New Hampshire 03104, United States",43.033546,-71.462869,North End,03104
+Michael Adams,4,"767 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.057129,-70.751681,Sagamore Grove,03801
+Rachel Green,5,"615 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05339,-70.778713,Portsmouth Plains,03801
+Isaac Wilson,4,"383 Islington Street, Portsmouth, New Hampshire 03801, United States",43.072908,-70.767419,Islington Creek,03801
+Tina Hill,3,"973 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.06287,-70.773139,Lafayette Park,03801
+Quincy Green,2,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Oliver Wilson,3,"Madison Street, Portsmouth, New Hampshire 03801, United States",43.07045,-70.765807,Goodwin Park,03801
+Hannah Clark,2,"488 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.071286,-70.74979,South End,03801
+Sam Turner,3,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Quincy Hill,1,"45 Brewster Street, Portsmouth, New Hampshire 03801, United States",43.074705,-70.764518,Islington Creek,03801
+Julia Allen,4,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Charlie Reed,2,"182 New Castle Avenue, Portsmouth, New Hampshire 03801, United States",43.070273,-70.748834,Little Harbor,03801
+George Hill,3,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Alice Hill,3,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Kevin Wilson,1,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Nancy Clark,5,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Ethan Adams,2,"669 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.064154,-70.7626,Wibird Area,03801
+Lily Hill,5,"51 Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074628,-70.750449,South End,03801
+Lily Clark,4,"189 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.070598,-70.759742,Richards Avenue Area,03801
+Daisy Wilson,4,"117 South Street, Portsmouth, New Hampshire 03801, United States",43.071525,-70.751445,South End,03801
+Daisy Davis,1,"185 Fleet Street, Portsmouth, New Hampshire 03801, United States",43.07734,-70.759661,Downtown,03801
+Hannah Harris,5,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Quincy Scott,1,"181 Austin Street, Portsmouth, New Hampshire 03801, United States",43.07187,-70.76468,Goodwin Park,03801
+Daisy Miller,1,"600 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.053621,-70.778284,Portsmouth Plains,03801
+Rachel Davis,5,"313 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.054659,-70.77628,Portsmouth Plains,03801
+Oliver Davis,5,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Paula Reed,5,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Tina Brown,4,"971 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.066791,-70.757038,Richards Avenue Area,03801
+Kevin Allen,1,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Quincy Adams,1,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Sam Wilson,5,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Julia Reed,3,"241 New Castle Avenue, Portsmouth, New Hampshire 03801, United States",43.070382,-70.747761,Little Harbor,03801
+Lily White,1,"685 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.062957,-70.773206,Lafayette Park,03801
+Oliver Hill,3,"323 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.068259,-70.75993,Lincoln,03801
+Paula Turner,3,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Sam Clark,3,"Cass Street, Portsmouth, New Hampshire, United States",43.0701,-70.76919,Cass Street,03801
+Alice Brown,1,"Adams Avenue, Portsmouth, New Hampshire 03801, United States",43.037709,-70.7667475,Elwyn Park,03801
+Oliver Baker,4,"875 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082406,-70.77145,Cutts Cove,03801
+Lily Davis,4,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Lily Davis,1,"High Street, Portsmouth, New Hampshire 03801, United States",43.078309,-70.7588895,Downtown,03801
+Nancy Lee,2,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Lily Reed,1,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Rachel Allen,4,"1131 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.083002,-70.785522,Frank Jones Farm,03801
+Charlie Green,3,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Nancy Harris,2,"Broad Street, Portsmouth, New Hampshire, United States",43.06312,-70.75622,Broad Street,03801
+Charlie Adams,5,"941 Pearl Street, Manchester, New Hampshire 03104, United States",42.99746,-71.445055,Straw,03104
+Rachel Hill,2,"298 Thornton Street, Manchester, New Hampshire 03102, United States",42.99077,-71.483839,Notre Dame,03102
+Paula Garcia,5,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Isaac Allen,4,"Pleasant Street, Portsmouth, New Hampshire 03801, United States",43.074555,-70.7545881818182,South End,03801
+Kevin Johnson,4,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Paula Lee,2,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Ethan Smith,5,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+George Scott,4,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Charlie Reed,5,"South Mill Street, Portsmouth, New Hampshire 03801, United States",43.07322,-70.75026,South End,03801
+Fiona Clark,3,"233 Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.063243,-70.767564,Wibird Area,03801
+Tina Smith,3,"Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.0698125,-70.7593955,Richards Avenue Area,03801
+Bob Harris,1,"786 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.056941,-70.751438,Sagamore Grove,03801
+Quincy Lee,5,"92 Court Street, Portsmouth, New Hampshire 03801, United States",43.074569,-70.759276,Downtown,03801
+Ethan Allen,3,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Sam Brown,1,"813 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.066963,-70.757151,Richards Avenue Area,03801
+Nancy Clark,3,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Quincy Scott,5,"301 Court Street, Portsmouth, New Hampshire 03801, United States",43.075705,-70.756161,Downtown,03801
+Nancy Lee,1,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Lily Brown,1,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Hannah Smith,3,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Sam Turner,4,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Hannah Davis,2,"38 Cass Street, Portsmouth, New Hampshire 03801, United States",43.071354,-70.769739,Cass Street,03801
+Oliver Kim,1,"Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.0679975,-70.7610185,Lincoln,03801
+Charlie Adams,2,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Oliver Garcia,1,"Congress Street, Portsmouth, New Hampshire 03801, United States",43.076422,-70.759307,Downtown,03801
+Hannah Hill,3,"South Street, Portsmouth, New Hampshire 03801, United States",43.0658175,-70.7597385,Lincoln,03801
+Nancy Davis,5,"186 Maple Street, Portsmouth, New Hampshire 03801, United States",43.081266,-70.784872,Frank Jones Farm,03801
+Hannah Garcia,1,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Daisy White,5,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Michael Davis,4,"Granite Street, Portsmouth, New Hampshire 03801, United States",43.0855095,-70.7863505,Frank Jones Farm,03801
+Julia Garcia,2,"925 Bartlett Street, Manchester, New Hampshire 03102, United States",42.993318,-71.480792,Notre Dame,03102
+Michael Adams,2,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Charlie Clark,4,"1852 Bridge Street, Manchester, New Hampshire 03104, United States",42.994214,-71.404031,Youngsville,03104
+Isaac Miller,5,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Rachel Johnson,3,"416 Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069261,-70.761481,Lincoln,03801
+Quincy Garcia,3,"Bridge Street, Portsmouth, New Hampshire 03801, United States",43.07623,-70.76176,Islington Creek,03801
+Nancy Green,4,"965 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.062873,-70.773141,Lafayette Park,03801
+Bob White,4,"Congress Street, Portsmouth, New Hampshire 03801, United States",43.076422,-70.759307,Downtown,03801
+Ethan Garcia,1,"Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.0825105,-70.7696875,Cutts Cove,03801
+Tina Green,3,"Wibird Street, Portsmouth, New Hampshire 03801, United States",43.0666105,-70.763359,Wibird Area,03801
+Bob Clark,2,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Julia Baker,4,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Oliver Johnson,5,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Oliver Lee,3,"Kane Street, Portsmouth, New Hampshire 03801, United States",43.0784705,-70.7714085,Christian Shore,03801
+Bob Scott,3,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Ethan Garcia,5,"11 Pleasant Street, Portsmouth, New Hampshire 03801, United States",43.076719,-70.757487,Downtown,03801
+Michael Adams,2,"406 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082401,-70.77117,Cutts Cove,03801
+Michael Baker,2,"688 Thornton Street, Portsmouth, New Hampshire 03801, United States",43.07339,-70.776407,Christian Shore,03801
+Alice White,3,"Cass Street, Portsmouth, New Hampshire, United States",43.0701,-70.76919,Cass Street,03801
+Nancy Wilson,5,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Kevin Scott,2,"604 Hanover Street, Manchester, New Hampshire 03104, United States",42.990101,-71.439306,Hanover Hill,03104
+Quincy Clark,3,"133 Peverly Hill Road, Portsmouth, New Hampshire 03801, United States",43.055688,-70.780752,Portsmouth Plains,03801
+George Smith,4,"Congress Street, Portsmouth, New Hampshire 03801, United States",43.076422,-70.759307,Downtown,03801
+Charlie Green,2,"270 Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.039718,-70.767697,Elwyn Park,03801
+Paula Johnson,4,"246 Bridge Street, Portsmouth, New Hampshire 03801, United States",43.076593,-70.761874,Islington Creek,03801
+Isaac Garcia,5,"Brackett Lane, Portsmouth, New Hampshire 03801, United States",43.068337,-70.754319,Little Harbor,03801
+Lily Reed,2,"73 Fernald Court, Portsmouth, New Hampshire 03801, United States",43.070224,-70.749126,Little Harbor,03801
+Hannah Baker,2,"964 State Street, Portsmouth, New Hampshire 03801, United States",43.077134,-70.754373,Downtown,03801
+Nancy Clark,5,"516 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082397,-70.770884,Cutts Cove,03801
+Fiona Allen,3,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Isaac Hill,3,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Nancy Kim,1,"270 Union Street, Portsmouth, New Hampshire 03801, United States",43.069874,-70.764051,Wibird Area,03801
+Daisy Brown,1,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Rachel Turner,3,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Michael Baker,1,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Kevin White,3,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Alice Clark,1,"774 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.067005,-70.757179,Richards Avenue Area,03801
+Ethan Harris,2,"134 Fleet Street, Portsmouth, New Hampshire 03801, United States",43.076586,-70.759059,Downtown,03801
+George Baker,2,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Bob Davis,4,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Paula Wilson,2,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Sam Smith,5,"Marcy Street, Portsmouth, New Hampshire 03801, United States",43.0737915,-70.751238,South End,03801
+Julia Turner,4,"112 Cabot Street, Portsmouth, New Hampshire 03801, United States",43.071662,-70.764683,Goodwin Park,03801
+Charlie Smith,5,"1700 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.05044,-70.748027,Sagamore Grove,03801
+Fiona Baker,3,"209 Russell Street, Manchester, New Hampshire 03104, United States",43.003729,-71.451989,Straw,03104
+Tina Turner,3,"728 Middle Street, Portsmouth, New Hampshire 03801, United States",43.067124,-70.767011,Lafayette Park,03801
+Charlie Allen,2,"Thornton Street, Portsmouth, New Hampshire 03801, United States",43.0753285,-70.77354,Christian Shore,03801
+Tina Harris,5,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Kevin Wilson,2,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Charlie Wilson,2,"Adams Avenue, Portsmouth, New Hampshire 03801, United States",43.037709,-70.7667475,Elwyn Park,03801
+Charlie Turner,3,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Charlie Hill,5,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Fiona Turner,3,"Thornton Street, Portsmouth, New Hampshire 03801, United States",43.0753285,-70.77354,Christian Shore,03801
+Kevin Garcia,4,"746 Court Street, Portsmouth, New Hampshire 03801, United States",43.077108,-70.753115,Downtown,03801
+Kevin Adams,5,"832 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.066942,-70.757137,Richards Avenue Area,03801
+Michael Allen,5,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Rachel Miller,2,"Adams Avenue, Portsmouth, New Hampshire 03801, United States",43.037709,-70.7667475,Elwyn Park,03801
+Hannah Johnson,2,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Lily Clark,5,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Isaac Johnson,1,"282 Maplewood Avenue, Portsmouth, New Hampshire 03801, United States",43.079901,-70.766681,Christian Shore,03801
+Michael Clark,1,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Hannah Allen,1,"297 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.054833,-70.775915,Portsmouth Plains,03801
+Lily Johnson,3,"Adams Avenue, Portsmouth, New Hampshire 03801, United States",43.037709,-70.7667475,Elwyn Park,03801
+Daisy Miller,4,"Spinney Road, Portsmouth, New Hampshire 03801, United States",43.0645575,-70.77424,Lafayette Park,03801
+Paula Baker,3,"9 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.06669,-70.774557,Lafayette Park,03801
+Paula Scott,2,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Michael Lee,3,"281 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.065522,-70.763296,Wibird Area,03801
+Hannah Scott,2,"High Street, Portsmouth, New Hampshire 03801, United States",43.078309,-70.7588895,Downtown,03801
+Ethan White,1,"855 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.056261,-70.750593,Sagamore Grove,03801
+Alice Miller,1,"Cabot Street, Portsmouth, New Hampshire 03801, United States",43.072342,-70.7652100192308,Goodwin Park,03801
+Tina Harris,2,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Quincy Wilson,5,"Pearl Street, Portsmouth, New Hampshire 03801, United States",43.07548,-70.76303,Islington Creek,03801
+Alice Adams,5,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Bob Green,4,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Hannah White,5,"Pearl Street, Portsmouth, New Hampshire 03801, United States",43.07548,-70.76303,Islington Creek,03801
+Daisy Davis,2,"1349 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.051385,-70.747913,Sagamore Grove,03801
+Quincy Green,3,"Cabot Street, Portsmouth, New Hampshire 03801, United States",43.072342,-70.7652100192308,Goodwin Park,03801
+Alice Turner,4,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Julia Clark,3,"Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.0825105,-70.7696875,Cutts Cove,03801
+Ethan Harris,5,"1030 High Street, Portsmouth, New Hampshire 03801, United States",43.079087,-70.759958,North End,03801
+George Green,3,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Fiona Lee,2,"47 Chestnut Street, Portsmouth, New Hampshire 03801, United States",43.075805,-70.759372,Downtown,03801
+Hannah White,1,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Fiona Scott,4,"Granite Street, Portsmouth, New Hampshire 03801, United States",43.0855095,-70.7863505,Frank Jones Farm,03801
+Hannah White,5,"266 Middle Street, Portsmouth, New Hampshire 03801, United States",43.072424,-70.762026,Goodwin Park,03801
+Lily Turner,1,"44 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.0824,-70.771085,Cutts Cove,03801
+Nancy Davis,5,"Adams Avenue, Portsmouth, New Hampshire 03801, United States",43.037709,-70.7667475,Elwyn Park,03801
+Oliver Brown,3,"Summit Dr, Portsmouth, New Hampshire 03811, United States",43.074839,-70.764804,Islington Creek,03811
+Hannah Scott,4,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Hannah Harris,1,"Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.0698125,-70.7593955,Richards Avenue Area,03801
+Oliver Turner,1,"175 Salter Street, Portsmouth, New Hampshire 03801, United States",43.072347,-70.748953,South End,03801
+Fiona Kim,4,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Alice Harris,5,"864 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.062624,-70.772956,Lafayette Park,03801
+Charlie Turner,3,"402 Peverly Hill Road, Portsmouth, New Hampshire 03801, United States",43.054976,-70.780162,Portsmouth Plains,03801
+Daisy Kim,4,"504 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.064278,-70.762667,Wibird Area,03801
+Lily Miller,1,"977 High Street, Portsmouth, New Hampshire 03801, United States",43.079084,-70.759955,North End,03801
+Charlie Lee,3,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Paula Miller,4,"6 South Mill Street, Portsmouth, New Hampshire 03801, United States",43.07307,-70.750764,South End,03801
+Daisy White,5,"773 Granite Street, Manchester, New Hampshire 03102, United States",42.982943,-71.479984,Piscataquog,03102
+Hannah Lee,2,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Bob Turner,4,"242 South Street, Portsmouth, New Hampshire 03801, United States",43.069739,-70.752551,South End,03801
+Michael White,3,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Julia Reed,4,"Thornton Street, Portsmouth, New Hampshire 03801, United States",43.0753285,-70.77354,Christian Shore,03801
+Daisy Wilson,5,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Charlie Brown,4,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Rachel Wilson,5,"162 Brewster Street, Portsmouth, New Hampshire 03801, United States",43.075524,-70.765271,Islington Creek,03801
+Charlie Smith,2,"Congress Street, Portsmouth, New Hampshire 03801, United States",43.076422,-70.759307,Downtown,03801
+George Lee,3,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Charlie Reed,3,"1079 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082409,-70.771649,Cutts Cove,03801
+Daisy Adams,3,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Isaac Smith,4,"1461 South Street, Portsmouth, New Hampshire 03801, United States",43.062611,-70.770623,Lafayette Park,03801
+Charlie Davis,2,"501 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.067296,-70.757382,Richards Avenue Area,03801
+Quincy Smith,1,"Wibird Street, Portsmouth, New Hampshire 03801, United States",43.0666105,-70.763359,Wibird Area,03801
+Nancy Wilson,5,"100 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.069686,-70.75627,Richards Avenue Area,03801
+Tina Baker,3,"811 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.066965,-70.757152,Richards Avenue Area,03801
+Paula Kim,1,"209 Maple Street, Portsmouth, New Hampshire 03801, United States",43.081213,-70.784988,Frank Jones Farm,03801
+Alice Baker,5,"459 South Street, Portsmouth, New Hampshire 03801, United States",43.068261,-70.755522,Richards Avenue Area,03801
+Tina Turner,1,"191 Miller Avenue, Portsmouth, New Hampshire 03801, United States",43.06937,-70.760048,Lincoln,03801
+Alice Kim,2,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Nancy Lee,1,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Fiona Garcia,3,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Quincy Garcia,1,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Sam Miller,1,"724 Court Street, Portsmouth, New Hampshire 03801, United States",43.0771,-70.753132,South End,03801
+Tina Harris,5,"Bartlett Street, Portsmouth, New Hampshire 03801, United States",43.073191,-70.774605,Christian Shore,03801
+Daisy Lee,4,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Tina Clark,3,"178 Whipple Street, Manchester, New Hampshire 03102, United States",42.989905,-71.484309,Notre Dame,03102
+Alice Garcia,4,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Bob Reed,3,"14 Islington Street, Portsmouth, New Hampshire 03801, United States",43.075463,-70.761521,Islington Creek,03801
+Bob Wilson,4,"242 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05544,-70.77464,Portsmouth Plains,03801
+Oliver Baker,5,"41 High Street, Portsmouth, New Hampshire 03801, United States",43.077353,-70.75838,Downtown,03801
+Oliver Hill,1,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Oliver Smith,5,"112 Cass Street, Portsmouth, New Hampshire 03801, United States",43.07024,-70.76861,Cass Street,03801
+Quincy Turner,3,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Isaac White,4,"66 Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074593,-70.750309,South End,03801
+Kevin Miller,2,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Alice Brown,5,"Haven Road, Portsmouth, New Hampshire 03801, United States",43.067607,-70.7548595,Little Harbor,03801
+Charlie Wilson,4,"40 Thornton Street, Portsmouth, New Hampshire 03801, United States",43.077387,-70.771313,Christian Shore,03801
+Alice Wilson,5,"187 Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074667,-70.75007,South End,03801
+Paula Lee,4,"Cabot Street, Portsmouth, New Hampshire 03801, United States",43.072342,-70.7652100192308,Goodwin Park,03801
+Charlie Adams,2,"112 Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.083634,-70.788492,Frank Jones Farm,03801
+Ethan Reed,4,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Daisy Davis,3,"1377 South Street, Portsmouth, New Hampshire 03801, United States",43.062601,-70.770416,Lafayette Park,03801
+Hannah Baker,1,"252 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.07352,-70.777046,Christian Shore,03801
+Ethan Johnson,2,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Alice Baker,2,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Julia Kim,3,"506 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.066786,-70.757036,Richards Avenue Area,03801
+Paula Davis,5,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Rachel Davis,4,"Wibird Street, Portsmouth, New Hampshire 03801, United States",43.0666105,-70.763359,Wibird Area,03801
+Sam Davis,1,"1021 Bartlett Street, Manchester, New Hampshire 03102, United States",42.993291,-71.482651,Notre Dame,03102
+Charlie Hill,1,"178 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.056109,-70.773438,Portsmouth Plains,03801
+Tina Brown,5,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Paula Allen,3,"144 Thornton Street, Manchester, New Hampshire 03102, United States",42.988097,-71.482967,Notre Dame,03102
+Tina Allen,3,"7 Peverly Hill Road, Portsmouth, New Hampshire 03801, United States",43.05527,-70.780399,Portsmouth Plains,03801
+Daisy Miller,1,"Cass Street, Portsmouth, New Hampshire, United States",43.0701,-70.76919,Cass Street,03801
+Hannah Turner,2,"305 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.06509,-70.763091,Wibird Area,03801
+Rachel Green,3,"1408 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.051229,-70.747956,Sagamore Grove,03801
+Michael Baker,3,"South Mill Street, Portsmouth, New Hampshire 03801, United States",43.07322,-70.75026,South End,03801
+Hannah Green,3,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+George Wilson,4,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+Michael Harris,4,"318 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.06905,-70.758878,Richards Avenue Area,03801
+Fiona Turner,2,"575 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.076754,-70.780374,Frank Jones Farm,03801
+Sam Smith,5,"655 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.066715,-70.766603,Wibird Area,03801
+Kevin Green,2,"153 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.071103,-70.76009,Richards Avenue Area,03801
+Oliver Adams,4,"845 Broad Street, Portsmouth, New Hampshire 03801, United States",43.061895,-70.756434,Broad Street,03801
+Kevin Harris,3,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Alice Baker,5,"534 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.070866,-70.749662,South End,03801
+Sam Harris,5,"71 Rockland Street, Portsmouth, New Hampshire 03801, United States",43.070518,-70.757982,Richards Avenue Area,03801
+Oliver Baker,2,"528 Miller Avenue, Portsmouth, New Hampshire 03801, United States",43.066197,-70.758,Lincoln,03801
+Hannah Smith,3,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Tina Brown,1,"Bridge Street, Portsmouth, New Hampshire 03801, United States",43.07623,-70.76176,Islington Creek,03801
+Lily Miller,4,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Alice Garcia,3,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Bob Wilson,3,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Michael Wilson,4,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Lily Wilson,3,"Broad Street, Portsmouth, New Hampshire, United States",43.06312,-70.75622,Broad Street,03801
+Paula Clark,4,"7 Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.084619,-70.786998,Frank Jones Farm,03801
+Julia Adams,5,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Isaac Johnson,2,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Bob White,3,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Rachel Hill,5,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Ethan Smith,2,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Lily Harris,3,"287 Cabot Street, Portsmouth, New Hampshire 03801, United States",43.073601,-70.766687,Islington Creek,03801
+Nancy Davis,1,"298 Union Street, Portsmouth, New Hampshire 03801, United States",43.069583,-70.763799,Wibird Area,03801
+Rachel Turner,3,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Bob Garcia,4,"354 Pearl Street, Manchester, New Hampshire 03104, United States",42.997247,-71.447251,Straw,03104
+Alice Harris,4,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Rachel Baker,5,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Fiona White,2,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Bob Brown,5,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+Michael Hill,4,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Daisy Kim,2,"74 Congress Street, Portsmouth, New Hampshire 03801, United States",43.07617,-70.759178,Downtown,03801
+Paula Davis,2,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Fiona Hill,3,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Ethan Johnson,5,"Bartlett Street, Portsmouth, New Hampshire 03801, United States",43.073191,-70.774605,Christian Shore,03801
+Quincy Reed,5,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Kevin Kim,5,"312 Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.063181,-70.767829,Wibird Area,03801
+Fiona Allen,3,"South Street, Portsmouth, New Hampshire 03801, United States",43.0658175,-70.7597385,Lincoln,03801
+Paula Scott,3,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Rachel Davis,5,"564 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.06723,-70.757334,Richards Avenue Area,03801
+Charlie Harris,2,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Sam Johnson,2,"South Mill Street, Portsmouth, New Hampshire 03801, United States",43.07322,-70.75026,South End,03801
+Hannah Hill,3,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Bob Davis,1,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Isaac Adams,1,"942 State Street, Portsmouth, New Hampshire 03801, United States",43.077137,-70.754368,Downtown,03801
+Fiona Reed,1,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Lily Scott,3,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Sam Brown,3,"Congress Street, Portsmouth, New Hampshire 03801, United States",43.076422,-70.759307,Downtown,03801
+Tina Adams,2,"215 Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.082735,-70.79111,Frank Jones Farm,03801
+Rachel White,4,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Alice Harris,3,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Isaac Johnson,3,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+Tina Brown,5,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Alice Baker,3,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Hannah Smith,4,"High Street, Portsmouth, New Hampshire 03801, United States",43.078309,-70.7588895,Downtown,03801
+Charlie Miller,2,"High Street, Portsmouth, New Hampshire 03801, United States",43.078309,-70.7588895,Downtown,03801
+Oliver Baker,4,"749 Granite Street, Manchester, New Hampshire 03102, United States",42.982952,-71.479978,Piscataquog,03102
+Kevin Turner,5,"Congress Street, Portsmouth, New Hampshire 03801, United States",43.076422,-70.759307,Downtown,03801
+Daisy Allen,3,"Kane Street, Portsmouth, New Hampshire 03801, United States",43.0784705,-70.7714085,Christian Shore,03801
+Oliver Scott,2,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Isaac Miller,5,"Bartlett Street, Portsmouth, New Hampshire 03801, United States",43.073191,-70.774605,Christian Shore,03801
+Ethan Miller,1,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+Charlie Hill,5,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Nancy Smith,1,"919 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082407,-70.77152,Cutts Cove,03801
+Paula Brown,4,"34 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.072586,-70.761165,Richards Avenue Area,03801
+Lily Reed,3,"2 South Street, Portsmouth, New Hampshire 03801, United States",43.072377,-70.750558,South End,03801
+Kevin Lee,3,"250 Farm Lane, Portsmouth, New Hampshire 03801, United States",43.077986,-70.786426,Frank Jones Farm,03801
+Fiona Smith,1,"246 Cass Street, Portsmouth, New Hampshire 03801, United States",43.069236,-70.76655,Cass Street,03801
+Charlie Davis,5,"105 Islington Street, Portsmouth, New Hampshire 03801, United States",43.074766,-70.763114,Islington Creek,03801
+Ethan Hill,3,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Ethan Garcia,3,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Oliver White,2,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Hannah Garcia,3,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Paula White,1,"261 Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.082735,-70.79111,Frank Jones Farm,03801
+Nancy Hill,3,"957 Miller Avenue, Portsmouth, New Hampshire 03801, United States",43.066088,-70.75794,Lincoln,03801
+Tina Scott,1,"Bartlett Street, Portsmouth, New Hampshire 03801, United States",43.073191,-70.774605,Christian Shore,03801
+Kevin Wilson,2,"Madison Street, Portsmouth, New Hampshire 03801, United States",43.07045,-70.765807,Goodwin Park,03801
+Daisy White,5,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Quincy Johnson,4,"Brackett Lane, Portsmouth, New Hampshire 03801, United States",43.068337,-70.754319,Little Harbor,03801
+Fiona Scott,4,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Charlie Garcia,1,"1 Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.065144,-70.76014,Broad Street,03801
+Bob Wilson,3,"538 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.067193,-70.764024,Wibird Area,03801
+Hannah Harris,5,"314 Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069285,-70.761415,Lincoln,03801
+Isaac Garcia,4,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Bob Clark,4,"1377 Hanover Street, Manchester, New Hampshire 03104, United States",42.989846,-71.407124,Youngsville,03104
+Julia Lee,4,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Charlie Wilson,5,"743 Broad Street, Portsmouth, New Hampshire 03801, United States",43.061943,-70.756477,Broad Street,03801
+Nancy White,5,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Kevin Wilson,1,"Granite Street, Portsmouth, New Hampshire 03801, United States",43.0855095,-70.7863505,Frank Jones Farm,03801
+George Clark,1,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Alice Baker,5,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Charlie Wilson,3,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Tina Miller,3,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Charlie Miller,1,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Paula Adams,5,"44 Broad Street, Portsmouth, New Hampshire 03801, United States",43.069718,-70.762011,Lincoln,03801
+Tina Green,4,"Pleasant Street, Portsmouth, New Hampshire 03801, United States",43.074555,-70.7545881818182,South End,03801
+Paula Clark,1,"247 Bridge Street, Portsmouth, New Hampshire 03801, United States",43.076593,-70.761874,Islington Creek,03801
+Quincy Hill,5,"1803 Maplewood Avenue, Portsmouth, New Hampshire 03801, United States",43.082766,-70.784973,Frank Jones Farm,03801
+Alice Allen,5,"1948 Lafayette Road, Portsmouth, New Hampshire 03801, United States",43.039502,-70.775702,Elwyn Park,03801
+Sam Allen,1,"73 Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.084025,-70.787915,Frank Jones Farm,03801
+Paula Clark,5,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Bob Davis,2,"Cabot Street, Portsmouth, New Hampshire 03801, United States",43.072342,-70.7652100192308,Goodwin Park,03801
+Fiona Kim,1,"913 Thornton Street, Portsmouth, New Hampshire 03801, United States",43.073564,-70.776213,Christian Shore,03801
+Michael Green,2,"377 High Street, Portsmouth, New Hampshire 03801, United States",43.079003,-70.759856,Downtown,03801
+Paula Harris,5,"Cass Street, Portsmouth, New Hampshire, United States",43.0701,-70.76919,Cass Street,03801
+Tina Reed,2,"1062 Hanover Street, Manchester, New Hampshire 03104, United States",42.987197,-71.41922,Eaton Heights,03104
+Tina Smith,2,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Rachel Wilson,4,"1403 South Street, Portsmouth, New Hampshire 03801, United States",43.062611,-70.770623,Lafayette Park,03801
+Julia Green,4,"916 Broad Street, Portsmouth, New Hampshire 03801, United States",43.06186,-70.756404,Broad Street,03801
+Ethan Brown,2,"649 South Street, Portsmouth, New Hampshire 03801, United States",43.066725,-70.757058,Richards Avenue Area,03801
+Ethan Hill,2,"South Mill Street, Portsmouth, New Hampshire 03801, United States",43.07322,-70.75026,South End,03801
+Sam Scott,4,"106 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.069652,-70.756396,Richards Avenue Area,03801
+Michael Brown,4,"62 Fleet Street, Portsmouth, New Hampshire 03801, United States",43.075975,-70.758634,Downtown,03801
+Quincy Garcia,5,"560 Miller Avenue, Portsmouth, New Hampshire 03801, United States",43.066189,-70.757996,Lincoln,03801
+Julia Smith,1,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Quincy Lee,1,"1204 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.051767,-70.747803,Sagamore Grove,03801
+Alice Davis,4,"403 Peverly Hill Road, Portsmouth, New Hampshire 03801, United States",43.054976,-70.780162,Portsmouth Plains,03801
+Quincy Allen,4,"Chestnut Street, Portsmouth, New Hampshire 03801, United States",43.0757385,-70.759677,Downtown,03801
+Ethan Hill,4,"373 Austin Street, Portsmouth, New Hampshire 03801, United States",43.070534,-70.766176,Goodwin Park,03801
+Tina Smith,2,"207 Sagamore Ave, Portsmouth, New Hampshire 03801, United States",43.06458,-70.75728,Broad Street,03801
+Quincy Lee,1,"New Castle Avenue, Portsmouth, New Hampshire 03801, United States",43.070468,-70.745669,Little Harbor,03801
+Rachel Wilson,1,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Daisy Turner,5,"405 Austin Street, Portsmouth, New Hampshire 03801, United States",43.070501,-70.766219,Goodwin Park,03801
+Bob Brown,5,"Kane Street, Portsmouth, New Hampshire 03801, United States",43.0784705,-70.7714085,Christian Shore,03801
+Fiona Brown,5,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Alice Green,1,"Marcy Street, Portsmouth, New Hampshire 03801, United States",43.0737915,-70.751238,South End,03801
+Daisy Smith,1,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Quincy Davis,2,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+George Baker,2,"961 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.066663,-70.767037,Wibird Area,03801
+Bob Miller,1,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Lily Hill,5,"Madison Street, Portsmouth, New Hampshire 03801, United States",43.07045,-70.765807,Goodwin Park,03801
+Michael Baker,4,"456 Islington Street, Portsmouth, New Hampshire 03801, United States",43.072183,-70.768624,Islington Creek,03801
+Sam Reed,2,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Hannah Green,1,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Oliver Baker,4,"273 Whipple Street, Manchester, New Hampshire 03102, United States",42.99112,-71.48457,Notre Dame,03102
+Charlie Johnson,3,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Fiona Johnson,2,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Nancy Davis,2,"902 Thornton Street, Portsmouth, New Hampshire 03801, United States",43.073198,-70.776564,Christian Shore,03801
+Sam Smith,4,"Kane Street, Portsmouth, New Hampshire 03801, United States",43.0784705,-70.7714085,Christian Shore,03801
+Sam Lee,2,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Ethan Adams,4,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Rachel Brown,2,"451 Union Street, Portsmouth, New Hampshire 03801, United States",43.069058,-70.76352,Wibird Area,03801
+Hannah Baker,1,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Daisy Hill,3,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Tina Adams,5,"249 Thornton Street, Manchester, New Hampshire 03102, United States",42.990039,-71.483394,Notre Dame,03102
+Julia Johnson,1,"803 Bartlett Street, Manchester, New Hampshire 03102, United States",42.993433,-71.481392,Notre Dame,03102
+Alice Turner,3,"51 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.071891,-70.774577,Christian Shore,03801
+Paula Adams,5,"Market Street, Portsmouth, New Hampshire 03801, United States",43.0822131818182,-70.7626760909091,Nobles Island,03801
+Tina Garcia,1,"1219 Maplewood Avenue, Portsmouth, New Hampshire 03801, United States",43.082674,-70.783499,Frank Jones Farm,03801
+Isaac White,4,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Ethan Harris,1,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Isaac Harris,1,"1080 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.067137,-70.757265,Richards Avenue Area,03801
+Paula Wilson,1,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+Oliver White,4,"98 Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.075065,-70.750352,South End,03801
+Ethan Garcia,1,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Ethan Harris,3,"Elwyn Park, Portsmouth, New Hampshire, United States",43.037422,-70.77728,Elwyn Park,03801
+Michael Johnson,5,"Cabot Street, Portsmouth, New Hampshire 03801, United States",43.072342,-70.7652100192308,Goodwin Park,03801
+Charlie Wilson,3,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Sam Kim,1,"452 Middle Street, Portsmouth, New Hampshire 03801, United States",43.070233,-70.763694,Goodwin Park,03801
+Tina Brown,4,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Alice Wilson,5,"388 Hanover Street, Manchester, New Hampshire 03104, United States",42.991129,-71.449909,Corey Square,03104
+Julia Adams,5,"305 High Street, Portsmouth, New Hampshire 03801, United States",43.078994,-70.759844,Downtown,03801
+Sam Smith,4,"15 Gates Street, Portsmouth, New Hampshire 03801, United States",43.074462,-70.753459,South End,03801
+Michael Hill,1,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Sam Reed,3,"Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.0825105,-70.7696875,Cutts Cove,03801
+Nancy Harris,2,"406 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.064346,-70.762703,Wibird Area,03801
+George Reed,4,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Isaac Garcia,1,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Julia Brown,4,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Isaac Brown,3,"1102 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.083392,-70.785839,Frank Jones Farm,03801
+Rachel Scott,3,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Hannah Davis,3,"620 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.062735,-70.773038,Lafayette Park,03801
+Bob Kim,4,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Ethan Brown,2,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Bob Lee,2,"Congress Street, Portsmouth, New Hampshire 03801, United States",43.076422,-70.759307,Downtown,03801
+Paula Clark,3,"Adams Avenue, Portsmouth, New Hampshire 03801, United States",43.037709,-70.7667475,Elwyn Park,03801
+Daisy Hill,1,"11 Peverly Hill Road, Portsmouth, New Hampshire 03801, United States",43.055283,-70.78041,Portsmouth Plains,03801
+Alice Green,3,"77 Lafayette Road, Portsmouth, New Hampshire 03801, United States",43.063577,-70.767758,Wibird Area,03801
+Alice Smith,4,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Kevin Adams,3,"Spinney Road, Portsmouth, New Hampshire 03801, United States",43.0645575,-70.77424,Lafayette Park,03801
+Sam Miller,3,"1046 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.067137,-70.757265,Richards Avenue Area,03801
+Isaac Baker,3,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Kevin Miller,4,"Broad Street, Portsmouth, New Hampshire, United States",43.06312,-70.75622,Broad Street,03801
+Paula Wilson,1,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Hannah Wilson,1,"456 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.067378,-70.762568,Wibird Area,03801
+Daisy Clark,5,"High Street, Portsmouth, New Hampshire 03801, United States",43.078309,-70.7588895,Downtown,03801
+Hannah Wilson,5,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Julia Lee,2,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Oliver Scott,5,"Madison Street, Portsmouth, New Hampshire 03801, United States",43.07045,-70.765807,Goodwin Park,03801
+Michael Smith,4,"Kane Street, Portsmouth, New Hampshire 03801, United States",43.0784705,-70.7714085,Christian Shore,03801
+George Miller,2,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Michael Lee,3,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Kevin Garcia,2,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Oliver Clark,3,"189 Langdon Street, Portsmouth, New Hampshire 03801, United States",43.075407,-70.765636,Islington Creek,03801
+Isaac Smith,4,"Market Street, Portsmouth, New Hampshire 03801, United States",43.0822131818182,-70.7626760909091,Nobles Island,03801
+Quincy Garcia,1,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Fiona White,4,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Quincy Harris,4,"376 Miller Avenue, Portsmouth, New Hampshire 03801, United States",43.066489,-70.758182,Lincoln,03801
+Quincy Harris,5,"810 Granite Street, Manchester, New Hampshire 03102, United States",42.982927,-71.479995,Piscataquog,03102
+Hannah White,1,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Alice Allen,1,"Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.0825105,-70.7696875,Cutts Cove,03801
+Ethan Johnson,3,"402 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.067732,-70.761487,Lincoln,03801
+Ethan Smith,2,"702 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05357,-70.778378,Portsmouth Plains,03801
+Oliver Turner,2,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Daisy Scott,1,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Fiona Brown,4,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Hannah Baker,4,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Bob Scott,2,"937 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.062881,-70.773147,Lafayette Park,03801
+Sam White,2,"50 Cass Street, Portsmouth, New Hampshire 03801, United States",43.071176,-70.769488,Cass Street,03801
+Daisy Garcia,3,"Wibird Street, Portsmouth, New Hampshire 03801, United States",43.0666105,-70.763359,Wibird Area,03801
+Fiona Davis,3,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Sam White,5,"1012 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.082305,-70.784952,Frank Jones Farm,03801
+Bob Kim,5,"263 Court Street, Portsmouth, New Hampshire 03801, United States",43.075438,-70.756783,Downtown,03801
+Daisy Johnson,4,"57 Fleet Street, Portsmouth, New Hampshire 03801, United States",43.075975,-70.758634,Downtown,03801
+Isaac Davis,1,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Alice Baker,5,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Fiona Lee,3,"743 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.070858,-70.749658,South End,03801
+Quincy Adams,1,"826 Union Street, Portsmouth, New Hampshire 03801, United States",43.065145,-70.76173,Wibird Area,03801
+George Turner,5,"243 Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.039799,-70.768918,Elwyn Park,03801
+Rachel Clark,5,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Quincy White,4,"1896 Maplewood Avenue, Portsmouth, New Hampshire 03801, United States",43.082727,-70.78513,Frank Jones Farm,03801
+Lily White,3,"Spinney Road, Portsmouth, New Hampshire 03801, United States",43.0645575,-70.77424,Lafayette Park,03801
+Paula Harris,1,"High Street, Portsmouth, New Hampshire 03801, United States",43.078309,-70.7588895,Downtown,03801
+Isaac Hill,1,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Kevin Hill,1,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Daisy Garcia,2,"1076 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.067137,-70.757265,Richards Avenue Area,03801
+Isaac Miller,3,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Alice Lee,2,"Brackett Lane, Portsmouth, New Hampshire 03801, United States",43.068337,-70.754319,Little Harbor,03801
+Daisy Johnson,3,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+Paula Harris,2,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Kevin Harris,3,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Kevin Scott,1,"Spinney Road, Portsmouth, New Hampshire 03801, United States",43.0645575,-70.77424,Lafayette Park,03801
+Tina Garcia,5,"179 Middle Street, Portsmouth, New Hampshire 03801, United States",43.073359,-70.76129,Goodwin Park,03801
+Bob Wilson,1,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Isaac Johnson,5,"56 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.071889,-70.774995,Christian Shore,03801
+Rachel Harris,1,"1991 Islington Street, Portsmouth, New Hampshire 03801, United States",43.057497,-70.785426,Portsmouth Plains,03801
+Hannah White,5,"884 Bridge Street, Manchester, New Hampshire 03104, United States",42.993703,-71.421583,Eaton Heights,03104
+George Miller,3,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Hannah Turner,1,"Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.0825105,-70.7696875,Cutts Cove,03801
+Alice Allen,3,"845 Bridge Street, Manchester, New Hampshire 03104, United States",42.993691,-71.423395,Eaton Heights,03104
+Michael Brown,5,"586 Market Street, Portsmouth, New Hampshire 03801, United States",43.084241,-70.775574,Frank Jones Farm,03801
+Michael Green,3,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Hannah Brown,1,"236 Union Street, Portsmouth, New Hampshire 03801, United States",43.07,-70.76463,Goodwin Park,03801
+Fiona Turner,5,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Kevin Adams,5,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Paula Brown,2,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Isaac Baker,1,"36 Rockland Street, Portsmouth, New Hampshire 03801, United States",43.070518,-70.757982,Richards Avenue Area,03801
+Rachel Harris,2,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Daisy Brown,3,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Kevin Adams,5,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Oliver Smith,2,"1632 Bridge Street, Manchester, New Hampshire 03104, United States",42.994253,-71.404371,Youngsville,03104
+Sam Harris,1,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Isaac Turner,5,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Lily Lee,5,"419 Maplewood Avenue, Portsmouth, New Hampshire 03801, United States",43.080389,-70.768413,Christian Shore,03801
+Hannah Lee,1,"Cass Street, Portsmouth, New Hampshire, United States",43.0701,-70.76919,Cass Street,03801
+Oliver Miller,3,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Michael Hill,1,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Julia Wilson,4,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Oliver White,2,"327 Court Street, Portsmouth, New Hampshire 03801, United States",43.076004,-70.755456,Downtown,03801
+Alice Reed,1,"205 Madison Street, Portsmouth, New Hampshire 03801, United States",43.071325,-70.767293,Goodwin Park,03801
+Fiona Reed,4,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Bob Turner,2,"477 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.053414,-70.778669,Portsmouth Plains,03801
+Daisy Baker,1,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Charlie Adams,5,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Tina Scott,5,"485 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.067313,-70.757394,Richards Avenue Area,03801
+Tina Smith,1,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Nancy Hill,5,"907 Thornton Street, Portsmouth, New Hampshire 03801, United States",43.073559,-70.776218,Christian Shore,03801
+Sam Garcia,4,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Tina Hill,1,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Lily Lee,3,"90 Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077514,-70.755871,Downtown,03801
+Kevin Brown,5,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Lily Scott,2,"Marcy Street, Portsmouth, New Hampshire 03801, United States",43.0737915,-70.751238,South End,03801
+Oliver Adams,2,"Pearl Street, Portsmouth, New Hampshire 03801, United States",43.07548,-70.76303,Islington Creek,03801
+Ethan Hill,5,"396 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.064353,-70.762707,Wibird Area,03801
+Daisy Green,2,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Kevin Kim,1,"102 Austin Street, Portsmouth, New Hampshire 03801, United States",43.072497,-70.763147,Goodwin Park,03801
+Fiona Hill,4,"215 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.064318,-70.774665,Lafayette Park,03801
+Rachel Lee,1,"927 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.080867,-70.783765,Frank Jones Farm,03801
+Paula Miller,4,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Lily Scott,4,"824 Hanover Street, Portsmouth, New Hampshire 03801, United States",43.074842,-70.764551,Islington Creek,03801
+Bob White,5,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Nancy Allen,1,"254 New Castle Avenue, Portsmouth, New Hampshire 03801, United States",43.070291,-70.747259,Little Harbor,03801
+Hannah Garcia,4,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Paula Green,1,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Alice Baker,3,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Alice Johnson,3,"375 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.068405,-70.758182,Richards Avenue Area,03801
+Paula Davis,3,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Hannah Baker,1,"72 Orchard Street, Portsmouth, New Hampshire 03801, United States",43.064932,-70.764481,Wibird Area,03801
+Alice Scott,4,"1044 Islington Street, Portsmouth, New Hampshire 03801, United States",43.065893,-70.776361,Lafayette Park,03801
+Hannah Johnson,5,"858 Hanover Street, Manchester, New Hampshire 03104, United States",42.987765,-71.428251,Eaton Heights,03104
+Ethan Smith,5,"Congress Street, Portsmouth, New Hampshire 03801, United States",43.076422,-70.759307,Downtown,03801
+Ethan Adams,4,"1800 Union Street, Manchester, New Hampshire 03104, United States",43.033319,-71.462854,North End,03104
+Charlie Scott,1,"Marcy Street, Portsmouth, New Hampshire 03801, United States",43.0737915,-70.751238,South End,03801
+Paula Clark,3,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Lily Scott,1,"Pearl Street, Portsmouth, New Hampshire 03801, United States",43.07548,-70.76303,Islington Creek,03801
+Michael Davis,2,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Alice Kim,1,"542 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.076754,-70.780374,Frank Jones Farm,03801
+Nancy White,4,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Alice Brown,2,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+Paula Kim,1,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Bob Brown,4,"322 Whipple Street, Manchester, New Hampshire 03102, United States",42.991328,-71.484615,Notre Dame,03102
+Tina Reed,1,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Oliver Scott,3,"687 Middle Street, Portsmouth, New Hampshire 03801, United States",43.067758,-70.766339,Wibird Area,03801
+Bob Miller,3,"662 Court Street, Portsmouth, New Hampshire 03801, United States",43.077076,-70.753181,Downtown,03801
+Tina White,4,"South Mill Street, Portsmouth, New Hampshire 03801, United States",43.07322,-70.75026,South End,03801
+Nancy Scott,4,"62 Thornton Street, Portsmouth, New Hampshire 03801, United States",43.076872,-70.771975,Christian Shore,03801
+Quincy Harris,1,"Kane Street, Portsmouth, New Hampshire 03801, United States",43.0784705,-70.7714085,Christian Shore,03801
+Quincy Allen,3,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Rachel Clark,3,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Kevin Lee,1,"717 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.062947,-70.773198,Lafayette Park,03801
+Isaac Wilson,3,"285 Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.082735,-70.79111,Frank Jones Farm,03801
+Daisy Lee,3,"573 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.076754,-70.780374,Frank Jones Farm,03801
+Michael Harris,2,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Michael Allen,1,"Brackett Lane, Portsmouth, New Hampshire 03801, United States",43.068337,-70.754319,Little Harbor,03801
+Bob Garcia,2,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Alice Davis,2,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Tina Harris,4,"Bridge Street, Portsmouth, New Hampshire 03801, United States",43.07623,-70.76176,Islington Creek,03801
+Daisy Hill,3,"Marcy Street, Portsmouth, New Hampshire 03801, United States",43.0737915,-70.751238,South End,03801
+Kevin Harris,1,"Kane Street, Portsmouth, New Hampshire 03801, United States",43.0784705,-70.7714085,Christian Shore,03801
+Michael Baker,2,"South Mill Street, Portsmouth, New Hampshire 03801, United States",43.07322,-70.75026,South End,03801
+Daisy Lee,3,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Ethan Scott,2,"Madison Street, Portsmouth, New Hampshire 03801, United States",43.07045,-70.765807,Goodwin Park,03801
+Isaac Wilson,4,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Paula Brown,1,"413 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.063038,-70.773268,Lafayette Park,03801
+Alice Smith,1,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Paula Brown,3,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Charlie Wilson,3,"207 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.070271,-70.759491,Richards Avenue Area,03801
+Kevin Kim,1,"210 Austin Street, Portsmouth, New Hampshire 03801, United States",43.071662,-70.764683,Goodwin Park,03801
+Oliver Lee,2,"206 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.07029,-70.759505,Richards Avenue Area,03801
+Isaac Johnson,3,"103 Brewster Street, Portsmouth, New Hampshire 03801, United States",43.075524,-70.765271,Islington Creek,03801
+Michael Brown,2,"335 Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069267,-70.761463,Lincoln,03801
+Rachel Green,5,"Bartlett Street, Portsmouth, New Hampshire 03801, United States",43.073191,-70.774605,Christian Shore,03801
+Nancy Wilson,3,"701 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.064132,-70.762589,Wibird Area,03801
+Kevin Garcia,5,"1517 Maplewood Avenue, Portsmouth, New Hampshire 03801, United States",43.082737,-70.784552,Frank Jones Farm,03801
+Sam Adams,5,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Bob Green,5,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Julia Johnson,4,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Bob Wilson,5,"66 Austin Street, Portsmouth, New Hampshire 03801, United States",43.072719,-70.762341,Goodwin Park,03801
+Alice Miller,3,"116 Thornton Street, Manchester, New Hampshire 03102, United States",42.987508,-71.483127,Notre Dame,03102
+Charlie Clark,1,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Hannah Lee,1,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Quincy Brown,3,"Bridge Street, Portsmouth, New Hampshire 03801, United States",43.07623,-70.76176,Islington Creek,03801
+Daisy Johnson,5,"340 Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069263,-70.761475,Lincoln,03801
+Julia Smith,5,"774 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.066698,-70.766738,Wibird Area,03801
+Paula Turner,4,"1658 Hanover Street, Manchester, New Hampshire 03104, United States",42.989836,-71.40705,Youngsville,03104
+George Garcia,1,"408 Broad Street, Portsmouth, New Hampshire 03801, United States",43.064649,-70.758256,Broad Street,03801
+Julia Adams,1,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Rachel Miller,1,"83 Peverly Hill Rd, Portsmouth, New Hampshire 03801, United States",43.05493,-70.78025,Portsmouth Plains,03801
+Julia Davis,4,"40 Brewster St, Portsmouth, New Hampshire 03801, United States",43.07449,-70.76446,Islington Creek,03801
+Fiona Wilson,3,"1707 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.050421,-70.748024,Sagamore Grove,03801
+Kevin Scott,5,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Fiona Garcia,1,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Paula Clark,2,"Adams Avenue, Portsmouth, New Hampshire 03801, United States",43.037709,-70.7667475,Elwyn Park,03801
+Rachel Baker,4,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Kevin Harris,1,"Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.0679975,-70.7610185,Lincoln,03801
+Lily Green,3,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Bob Scott,5,"541 Woodbury Avenue, Portsmouth, New Hampshire 03801, United States",43.076754,-70.780374,Frank Jones Farm,03801
+Charlie Baker,4,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Alice Kim,1,"Broad Street, Portsmouth, New Hampshire 03801, United States",43.0658305,-70.759319,Lincoln,03801
+Paula Johnson,1,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Charlie Kim,2,"57 Lafayette Road, Portsmouth, New Hampshire 03801, United States",43.06383,-70.767644,Lafayette Park,03801
+Daisy Green,2,"Aldrich Road, Portsmouth, New Hampshire 03801, United States",43.067279,-70.770189,Lafayette Park,03801
+Alice Clark,2,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Alice Smith,2,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Bob Allen,1,"High Street, Portsmouth, New Hampshire 03801, United States",43.078309,-70.7588895,Downtown,03801
+Lily Smith,1,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Kevin Allen,4,"Broad Street, Portsmouth, New Hampshire, United States",43.06312,-70.75622,Broad Street,03801
+Hannah Lee,5,"Granite Street, Portsmouth, New Hampshire 03801, United States",43.0855095,-70.7863505,Frank Jones Farm,03801
+Charlie Brown,4,"214 Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.082735,-70.79111,Frank Jones Farm,03801
+Oliver Clark,3,"16 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.072836,-70.761341,Richards Avenue Area,03801
+Charlie Johnson,1,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Kevin Adams,3,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Ethan Green,1,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Paula Kim,1,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Julia Clark,3,"428 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.062823,-70.773103,Lafayette Park,03801
+Alice Allen,4,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Lily Allen,5,"919 Broad Street, Portsmouth, New Hampshire 03801, United States",43.061859,-70.756404,Broad Street,03801
+Julia Kim,3,"1076 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.053325,-70.778835,Portsmouth Plains,03801
+Oliver Clark,1,"Kane Street, Portsmouth, New Hampshire 03801, United States",43.0784705,-70.7714085,Christian Shore,03801
+Daisy Kim,5,"511 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.053408,-70.77868,Portsmouth Plains,03801
+Rachel Lee,3,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Oliver Clark,5,"Market Street, Portsmouth, New Hampshire 03801, United States",43.0822131818182,-70.7626760909091,Nobles Island,03801
+Oliver Garcia,4,"798 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.066693,-70.766776,Wibird Area,03801
+Quincy Baker,2,"800 Granite Street, Manchester, New Hampshire 03102, United States",42.98293,-71.479993,Piscataquog,03102
+Tina Clark,2,"260 Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077734,-70.755034,Downtown,03801
+Quincy White,5,"429 Parrott Avenue, Portsmouth, New Hampshire 03801, United States",43.071201,-70.760157,Richards Avenue Area,03801
+Isaac Turner,5,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Fiona Green,4,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Lily Johnson,2,"710 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.066709,-70.766638,Wibird Area,03801
+Fiona Lee,1,"175 Austin Street, Manchester, New Hampshire 03102, United States",42.982178,-71.492254,Mast Road,03102
+Rachel Kim,5,"Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.0837015,-70.7889985,Frank Jones Farm,03801
+Paula White,5,"87 Daniel St, Portsmouth, New Hampshire 03801, United States",43.07747,-70.75565,Downtown,03801
+Bob Kim,5,"High Street, Portsmouth, New Hampshire 03801, United States",43.078309,-70.7588895,Downtown,03801
+Lily Garcia,3,"255 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.0658,-70.76313,Wibird Area,03801
+Paula Reed,2,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Kevin Lee,4,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Paula Allen,4,"627 South Street, Portsmouth, New Hampshire 03801, United States",43.066745,-70.757034,Richards Avenue Area,03801
+Tina Turner,4,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Kevin Scott,3,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Ethan Adams,1,"High Street, Portsmouth, New Hampshire 03801, United States",43.078309,-70.7588895,Downtown,03801
+Rachel Baker,3,"25 Brewster Street, Portsmouth, New Hampshire 03801, United States",43.074336,-70.764193,Islington Creek,03801
+Tina Turner,1,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Daisy Reed,1,"301 Thornton Street, Manchester, New Hampshire 03102, United States",42.9909,-71.4833,Notre Dame,03102
+Nancy Davis,1,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Sam Hill,4,"Broad Street, Portsmouth, New Hampshire 03801, United States",43.0658305,-70.759319,Lincoln,03801
+Daisy Smith,3,"Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.0825105,-70.7696875,Cutts Cove,03801
+Oliver Miller,2,"Fernald Court, Portsmouth, New Hampshire 03801, United States",43.069881,-70.7488905,Little Harbor,03801
+Paula Lee,4,"Granite Street, Portsmouth, New Hampshire 03801, United States",43.0855095,-70.7863505,Frank Jones Farm,03801
+Daisy Garcia,1,"Gardner Street, Portsmouth, New Hampshire 03801, United States",43.074546,-70.7508,South End,03801
+Lily Johnson,5,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Charlie Lee,3,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Michael Reed,5,"614 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.066899,-70.765525,Wibird Area,03801
+Bob Garcia,5,"824 Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.053509,-70.778492,Portsmouth Plains,03801
+Paula Kim,5,"Cass Street, Portsmouth, New Hampshire 03801, United States",43.070257,-70.7675665,Cass Street,03801
+George Scott,5,"498 Richards Avenue, Portsmouth, New Hampshire 03801, United States",43.0669,-70.75711,Richards Avenue Area,03801
+Bob Kim,1,"Pearl Street, Portsmouth, New Hampshire 03801, United States",43.07548,-70.76303,Islington Creek,03801
+Daisy White,2,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Paula Harris,5,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Quincy Johnson,5,"188 Maple Street, Portsmouth, New Hampshire 03801, United States",43.081258,-70.784888,Frank Jones Farm,03801
+Isaac Hill,4,"62 Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078908,-70.783765,Frank Jones Farm,03801
+Ethan Hill,4,"Madison Street, Portsmouth, New Hampshire 03801, United States",43.07045,-70.765807,Goodwin Park,03801
+Hannah Lee,2,"Daniel Street, Portsmouth, New Hampshire 03801, United States",43.077515,-70.7554332816901,Downtown,03801
+Fiona Smith,5,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Paula Clark,5,"Thornton Street, Portsmouth, New Hampshire 03801, United States",43.0753285,-70.77354,Christian Shore,03801
+Julia Reed,3,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Ethan Allen,2,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Kevin Kim,2,"1322 Sagamore Avenue, Portsmouth, New Hampshire 03801, United States",43.051456,-70.747892,Sagamore Grove,03801
+Isaac Lee,3,"Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.0679975,-70.7610185,Lincoln,03801
+Tina Johnson,2,"242 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082662,-70.768258,Cutts Cove,03801
+Tina Garcia,3,"1932 Islington Street, Portsmouth, New Hampshire 03801, United States",43.057628,-70.785438,Portsmouth Plains,03801
+Alice Johnson,4,"703 Broad Street, Portsmouth, New Hampshire 03801, United States",43.061962,-70.756494,Broad Street,03801
+Tina Kim,1,"1087 Marcy Street, Portsmouth, New Hampshire 03801, United States",43.070866,-70.749662,South End,03801
+Oliver Baker,1,"221 Deer Street, Portsmouth, New Hampshire 03801, United States",43.078814,-70.760575,North End,03801
+Hannah Wilson,1,"Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.0679975,-70.7610185,Lincoln,03801
+Charlie Green,4,"1483 Bridge Street, Manchester, New Hampshire 03104, United States",42.994227,-71.404147,Youngsville,03104
+Alice Allen,1,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Rachel White,1,"1292 Union Street, Manchester, New Hampshire 03104, United States",43.020215,-71.462281,North End,03104
+Bob Hill,5,"76 Lafayette Road, Portsmouth, New Hampshire 03801, United States",43.064296,-70.767428,Lafayette Park,03801
+Michael Johnson,5,"Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.0679975,-70.7610185,Lincoln,03801
+Quincy Green,5,"14 Farm Lane, Portsmouth, New Hampshire 03801, United States",43.079044,-70.78346,Frank Jones Farm,03801
+Charlie Kim,3,"Kane Street, Portsmouth, New Hampshire 03801, United States",43.0784705,-70.7714085,Christian Shore,03801
+Sam Miller,1,"590 Union Street, Portsmouth, New Hampshire 03801, United States",43.065225,-70.761768,Wibird Area,03801
+George Lee,1,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Charlie Brown,3,"900 Granite Street, Manchester, New Hampshire 03102, United States",42.982894,-71.480018,Piscataquog,03102
+Ethan Adams,3,"Granite Street, Portsmouth, New Hampshire 03801, United States",43.0855095,-70.7863505,Frank Jones Farm,03801
+Quincy Adams,5,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Charlie Adams,5,"Summit Dr, Portsmouth, New Hampshire 03811, United States",43.074839,-70.764804,Islington Creek,03811
+Michael Garcia,5,"Chestnut Street, Portsmouth, New Hampshire 03801, United States",43.0757385,-70.759677,Downtown,03801
+Rachel Smith,5,"Whipple Street, Portsmouth, New Hampshire 03801, United States",43.0752045,-70.7757859,Christian Shore,03801
+Lily Smith,3,"Mechanic Street, Portsmouth, New Hampshire 03801, United States",43.0747005,-70.750327,South End,03801
+Oliver Smith,5,"938 Lincoln Avenue, Portsmouth, New Hampshire 03801, United States",43.066667,-70.766996,Wibird Area,03801
+Oliver Hill,1,"242 Broad Street, Portsmouth, New Hampshire 03801, United States",43.066452,-70.759503,Lincoln,03801
+Fiona Smith,1,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Kevin Adams,2,"1750 Islington Street, Portsmouth, New Hampshire 03801, United States",43.059124,-70.784399,Portsmouth Plains,03801
+Bob Baker,3,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Isaac Clark,1,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Fiona Smith,3,"Langdon Street, Portsmouth, New Hampshire 03801, United States",43.074516,-70.7653624344262,Islington Creek,03801
+Paula Baker,2,"Mckinley Road, Portsmouth, New Hampshire 03801, United States",43.040078,-70.768478,Elwyn Park,03801
+Lily Hill,4,"71 Leslie Drive, Portsmouth, New Hampshire 03801, United States",43.082974,-70.769385,Cutts Cove,03801
+Paula Allen,5,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Bob Turner,5,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
+Quincy Miller,2,"174 Echo Avenue, Portsmouth, New Hampshire 03801, United States",43.082848,-70.78927,Frank Jones Farm,03801
+George Reed,3,"Farm Lane, Portsmouth, New Hampshire 03801, United States",43.078808,-70.785036,Frank Jones Farm,03801
+Hannah Hill,1,"Parker Street, Portsmouth, New Hampshire 03801, United States",43.0755905,-70.76288,Islington Creek,03801
+Alice Kim,3,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+George Baker,5,"Fleet Street, Portsmouth, New Hampshire 03801, United States",43.0761325714286,-70.7589378571429,Downtown,03801
+Ethan Brown,3,"Rockland Street, Portsmouth, New Hampshire 03801, United States",43.069858,-70.759441,Richards Avenue Area,03801
+Ethan Green,3,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Charlie Davis,2,"Cabot Street, Portsmouth, New Hampshire 03801, United States",43.072342,-70.7652100192308,Goodwin Park,03801
+Fiona Johnson,5,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Tina Harris,2,"459 Austin Street, Portsmouth, New Hampshire 03801, United States",43.070501,-70.766219,Goodwin Park,03801
+Kevin Miller,4,"492 Spinney Road, Portsmouth, New Hampshire 03801, United States",43.062793,-70.773082,Lafayette Park,03801
+Isaac Adams,4,"473 Parrott Avenue, Portsmouth, New Hampshire 03801, United States",43.071201,-70.760157,Richards Avenue Area,03801
+Michael Brown,5,"Broad Street, Portsmouth, New Hampshire, United States",43.06312,-70.75622,Broad Street,03801
+Alice Turner,5,"Madison Street, Portsmouth, New Hampshire 03801, United States",43.07045,-70.765807,Goodwin Park,03801
+Daisy Kim,2,"88 Peverly Hill Road, Portsmouth, New Hampshire 03801, United States",43.055539,-70.780626,Portsmouth Plains,03801
+Sam Turner,2,"New Castle Avenue, Portsmouth, New Hampshire 03801, United States",43.070468,-70.745669,Little Harbor,03801
+Fiona White,4,"1240 Bridge Street, Manchester, New Hampshire 03104, United States",42.994555,-71.405343,Youngsville,03104
+Hannah Kim,1,"Hancock Street, Portsmouth, New Hampshire 03801, United States",43.07497,-70.7528205,South End,03801
+Rachel Harris,5,"Gates Street, Portsmouth, New Hampshire 03801, United States",43.07483,-70.751949,South End,03801
+Hannah Garcia,3,"842 Union Street, Portsmouth, New Hampshire 03801, United States",43.065104,-70.76171,Wibird Area,03801
+Fiona Brown,1,"697 South Street, Portsmouth, New Hampshire 03801, United States",43.065775,-70.758601,Lincoln,03801
+Nancy Kim,2,"Brewster Street, Portsmouth, New Hampshire 03801, United States",43.07469,-70.7647515,Islington Creek,03801
+Fiona Miller,2,"Wibird Street, Portsmouth, New Hampshire 03801, United States",43.0666105,-70.763359,Wibird Area,03801
+Rachel Clark,5,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Isaac Harris,1,"Salter Street, Portsmouth, New Hampshire 03801, United States",43.0725,-70.74937,South End,03801
+Ethan Reed,4,"200 Wibird Street, Portsmouth, New Hampshire 03801, United States",43.06657,-70.763768,Wibird Area,03801
+Sam Reed,3,"Willard Avenue, Portsmouth, New Hampshire 03801, United States",43.0642175,-70.7653895,Wibird Area,03801
+Quincy Garcia,5,"864 Pearl Street, Manchester, New Hampshire 03104, United States",42.997458,-71.445079,Straw,03104
+Kevin Clark,5,"1015 Broad Street, Portsmouth, New Hampshire 03801, United States",43.061969,-70.7565,Broad Street,03801
+Paula Davis,3,"Pinehurst Road, Portsmouth, New Hampshire 03801, United States",43.06348,-70.7591115,Broad Street,03801
+Kevin Harris,2,"Greenleaf Avenue, Portsmouth, New Hampshire 03801, United States",43.05608,-70.7740335681818,Portsmouth Plains,03801
+Quincy Scott,2,"Austin Street, Portsmouth, New Hampshire 03801, United States",43.07178,-70.76416,Goodwin Park,03801
+Sam Miller,1,"Deer Street, Portsmouth, New Hampshire 03801, United States",43.078175,-70.760861,North End,03801
