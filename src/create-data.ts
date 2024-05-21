@@ -129,6 +129,11 @@ const streets = [
   "Gardner Street",
   "Willard Avenue",
   "Whipple Street",
+  "Osprey Drive",
+  "Kearsarge Way",
+  "Wedgewood Road",
+  "Freedom Circle",
+  "Beachstone Drive",
 ];
 
 // Generate random names
@@ -198,7 +203,7 @@ Promise.resolve(true).then(async () => {
     const address = `${Math.floor(Math.random() * 2000) + 1} ${
       streets[Math.floor(Math.random() * streets.length)]
     }, Portsmouth, NH 03801`;
-    const gradeLevel = Math.floor(Math.random() * 5) + 1;
+    const gradeLevel = Math.floor(Math.random() * 6);
 
     // const neighborhood =
     //   neighborhoods[Math.floor(Math.random() * neighborhoods.length)];

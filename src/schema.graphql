@@ -1,0 +1,31 @@
+type Student {
+  name: String
+  formattedAddress: Number
+  latitude: Number
+  longitude: Number
+  gradeLevel: Number
+  neighborhood: String
+}
+
+type School {
+  name: String
+  lat: Number
+  long: Number
+  maxCapacity: Number
+  students: [Student]
+}
+
+type Neighborhood {
+  name: String;
+  lat: Number;
+  long: Number;
+  students: [Student];
+}
+
+# The "Query" type is special: it lists all of the available queries that
+# clients can execute, along with the return type for each. In this
+# case, the "books" query returns an array of zero or more Books (defined above).
+type Query {
+  books: [School]
+  neighborhoods: [Neighborhood]
+}

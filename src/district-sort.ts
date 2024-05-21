@@ -1,57 +1,14 @@
-import * as Papa from "papaparse";
-import * as fs from "fs";
+//import * as Papa from "papaparse";
+import fs from "fs";
+import Papa from "papaparse";
 
-interface Student {
-  name: string;
-  formattedAddress: string;
-  latitude: number;
-  longitude: number;
-  gradeLevel: number;
-  neighbourhood: string;
-}
-
-interface School {
-  name: string;
-  lat: number;
-  long: number;
-  maxCapacity: number;
-  students: Student[];
-  capacityOverflowHandled: boolean;
-}
-
+import { School, Student, schoolFactory } from "./schools.js";
 interface Neighborhood {
   name: string;
   lat: number;
   long: number;
   students: Student[];
 }
-
-const schools: School[] = [
-  {
-    name: "Little Harbor",
-    lat: 43.0671615,
-    long: -70.7542339,
-    maxCapacity: 315,
-    students: [],
-    capacityOverflowHandled: false,
-  },
-  {
-    name: "Dondero",
-    lat: 43.0378247,
-    long: -70.7709701,
-    maxCapacity: 335,
-    students: [],
-    capacityOverflowHandled: false,
-  },
-  {
-    name: "New Franklin",
-    lat: 43.0770831,
-    long: -70.7791392,
-    maxCapacity: 250,
-    students: [],
-    capacityOverflowHandled: false,
-  },
-];
 
 const CLASS_SIZE = 20;
 
@@ -142,7 +99,30 @@ function assignNeighborhoodsToSchools(
       );
 
       let reassigned = false;
-      for (const school of schools) {
+
+      // const schoolsSortedByDistanceToNeighborhood = schools;
+
+      const schoolsSortedByDistanceToNeighborhood = schools
+        .slice()
+        .sort((a, b) => {
+          const distA = calculateDistance(
+            neighborhood.lat,
+            neighborhood.long,
+            a.lat,
+            a.long
+          );
+          const distB = calculateDistance(
+            neighborhood.lat,
+            neighborhood.long,
+            b.lat,
+            b.long
+          );
+          return distA - distB;
+        });
+
+      for (const school of schoolsSortedByDistanceToNeighborhood) {
+        console.log(`checking ${school.name}`);
+
         if (
           school !== closestSchool &&
           (school.students.length + neighborhood.students.length <=
@@ -258,7 +238,7 @@ function deriveAndSetNeighborhoodCentroids(neighborhoodsMap: {
   }
 }
 
-export default async function main(): Promise<{
+export default async function main(schools: School[]): Promise<{
   schools: School[];
   schoolMessages: String[];
 }> {
@@ -303,4 +283,4 @@ export default async function main(): Promise<{
   }
 }
 
-main();
+main(schoolFactory());

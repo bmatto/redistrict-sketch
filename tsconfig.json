@@ -1,19 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "module": "Node16",
-    "moduleResolution": "node16",
-    "strict": true,
+    "rootDirs": ["src"],
+    "outDir": "dist",
+    "lib": ["es2020", "dom"],
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react-jsx",
-    "plugins": [
-      {
-        "name": "typescript-plugin-css-modules"
-      }
-    ]
+    "types": ["node"],
+
+    "typeRoots": ["node_modules/@types", "src/@types"]
   },
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Recommended"
+  "include": ["src/**/*"],
+  "files": ["src/@types/graphql.d.ts"],
+  "exclude": ["node_modules", "dist"]
 }
