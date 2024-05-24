@@ -1,0 +1,5 @@
+{
+  "ext": "js,json,ts,tsx,jsx,graphql",
+  "ignore": ["dist/*", "src/**/*.graphql.ts"],
+  "watch": ["src", "package.json", "package-json.lock", "tsconfig.json"]
+}

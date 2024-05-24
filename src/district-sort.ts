@@ -2,172 +2,11 @@
 import fs from "fs";
 import Papa from "papaparse";
 
-import { School, Student, schoolFactory } from "./schools.js";
-interface Neighborhood {
-  name: string;
-  lat: number;
-  long: number;
-  students: Student[];
-}
+import { School, Student } from "./types.js";
+import neighborhoodFactory from "./factories/neighborhoods.js";
+import schoolFactory from "./factories/schools.js";
 
 const CLASS_SIZE = 20;
-
-function calculateDistance(
-  lat1: number,
-  long1: number,
-  lat2: number,
-  long2: number
-): number {
-  const toRad = (value: number) => (value * Math.PI) / 180;
-  const R = 6371; // km
-  const dLat = toRad(lat2 - lat1);
-  const dLong = toRad(long2 - long1);
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(toRad(lat1)) *
-      Math.cos(toRad(lat2)) *
-      Math.sin(dLong / 2) *
-      Math.sin(dLong / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return R * c;
-}
-
-function sortNeighborhoodsByProximityToSchools(
-  neighborhoods: Neighborhood[],
-  schools: School[]
-): Neighborhood[] {
-  return neighborhoods.sort((a, b) => {
-    const distA = Math.min(
-      ...schools.map((school) =>
-        calculateDistance(a.lat, a.long, school.lat, school.long)
-      )
-    );
-    const distB = Math.min(
-      ...schools.map((school) =>
-        calculateDistance(b.lat, b.long, school.lat, school.long)
-      )
-    );
-    return distA - distB;
-  });
-}
-
-function assignNeighborhoodsToSchools(
-  neighborhoods: Neighborhood[],
-  schools: School[]
-): void {
-  const sortedNeighborhoods = sortNeighborhoodsByProximityToSchools(
-    neighborhoods,
-    schools
-  );
-
-  for (const neighborhood of sortedNeighborhoods) {
-    const closestSchool = schools.reduce((prev, curr) => {
-      const prevDistance = calculateDistance(
-        neighborhood.lat,
-        neighborhood.long,
-        prev.lat,
-        prev.long
-      );
-      const currDistance = calculateDistance(
-        neighborhood.lat,
-        neighborhood.long,
-        curr.lat,
-        curr.long
-      );
-      return prevDistance < currDistance ? prev : curr;
-    });
-
-    if (
-      closestSchool.students.length + neighborhood.students.length <=
-      closestSchool.maxCapacity
-    ) {
-      console.log(
-        "assigning",
-        neighborhood.name,
-        "students to",
-        closestSchool.name
-      );
-
-      closestSchool.students.push(...neighborhood.students);
-    } else {
-      // Find the next closest school that can accommodate the students
-
-      console.log(
-        `${neighborhood.name} (${neighborhood.students.length})`,
-        "students could not be assigned to",
-        `${closestSchool.name} (${closestSchool.students.length}) - Max ${closestSchool.maxCapacity}`
-      );
-
-      let reassigned = false;
-
-      // const schoolsSortedByDistanceToNeighborhood = schools;
-
-      const schoolsSortedByDistanceToNeighborhood = schools
-        .slice()
-        .sort((a, b) => {
-          const distA = calculateDistance(
-            neighborhood.lat,
-            neighborhood.long,
-            a.lat,
-            a.long
-          );
-          const distB = calculateDistance(
-            neighborhood.lat,
-            neighborhood.long,
-            b.lat,
-            b.long
-          );
-          return distA - distB;
-        });
-
-      for (const school of schoolsSortedByDistanceToNeighborhood) {
-        console.log(`checking ${school.name}`);
-
-        if (
-          school !== closestSchool &&
-          (school.students.length + neighborhood.students.length <=
-            school.maxCapacity ||
-            school.capacityOverflowHandled === false)
-        ) {
-          console.log(
-            "assigning",
-            neighborhood.name,
-            "students to",
-            school.name
-          );
-
-          school.students.push(...neighborhood.students);
-          reassigned = true;
-          school.capacityOverflowHandled = true;
-          break;
-        }
-      }
-      if (!reassigned) {
-        // Handle cases where no school can accommodate the neighborhood
-        // find the next closest school that can accommodate the students
-
-        schools.forEach((school) => {});
-
-        console.log(
-          `Neighborhood ${neighborhood.name} could not be assigned within capacity limits.`
-        );
-
-        console.log(neighborhood.students.length);
-
-        console.log(
-          schools.map((school) => {
-            console.log(
-              school.students.length,
-              school.maxCapacity,
-              school.name,
-              school.capacityOverflowHandled
-            );
-          })
-        );
-      }
-    }
-  }
-}
 
 function logSchoolAssignments(schools: School[]): String[] {
   const schoolMessages: String[] = [];
@@ -220,26 +59,7 @@ function loadStudentsFromCSV(filePath: string): Promise<Student[]> {
   });
 }
 
-function deriveAndSetNeighborhoodCentroids(neighborhoodsMap: {
-  [key: string]: Neighborhood;
-}): void {
-  for (const neighborhoodName in neighborhoodsMap) {
-    const neighborhood = neighborhoodsMap[neighborhoodName];
-    const latSum = neighborhood.students.reduce(
-      (prev, curr) => prev + curr.latitude,
-      0
-    );
-    const longSum = neighborhood.students.reduce(
-      (prev, curr) => prev + curr.longitude,
-      0
-    );
-    neighborhood.lat = latSum / neighborhood.students.length;
-    neighborhood.long = longSum / neighborhood.students.length;
-  }
-}
-
-export default async function main(schools: School[]): Promise<{
-  schools: School[];
+export default async function main(): Promise<{
   schoolMessages: String[];
 }> {
   try {
@@ -247,40 +67,19 @@ export default async function main(schools: School[]): Promise<{
     students = students.filter((student) => {
       return student.name && student.formattedAddress.includes("Portsmouth");
     });
-    const neighborhoodsMap: { [key: string]: Neighborhood } = {};
 
-    for (const student of students) {
-      const neighborhoodName = student.neighbourhood;
-
-      if (!neighborhoodsMap[neighborhoodName]) {
-        neighborhoodsMap[neighborhoodName] = {
-          name: neighborhoodName,
-          lat: student.latitude,
-          long: student.longitude,
-          students: [],
-        };
-      }
-      neighborhoodsMap[neighborhoodName].students.push(student);
-    }
-
-    deriveAndSetNeighborhoodCentroids(neighborhoodsMap);
-
-    Object.keys(neighborhoodsMap).forEach((key) => {
-      console.log(key, neighborhoodsMap[key].lat, neighborhoodsMap[key].long);
-    });
-
+    const neighborhoodsMap = neighborhoodFactory(students);
     const neighborhoods = Object.values(neighborhoodsMap);
-    assignNeighborhoodsToSchools(neighborhoods, schools);
-
-    const schoolMessages = logSchoolAssignments(schools);
+    const schools = schoolFactory(neighborhoods);
+    const schoolMessages = logSchoolAssignments(Object.values(schools));
 
     fs.writeFileSync("finalAssignments.json", JSON.stringify(schools, null, 2));
 
-    return { schools, schoolMessages };
+    return { schoolMessages };
   } catch (error) {
     console.error("Error loading students:", error);
     throw error;
   }
 }
 
-main(schoolFactory());
+// main(schoolFactory());

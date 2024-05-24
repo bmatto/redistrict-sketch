@@ -1,12 +1,13 @@
-import { schoolFactory } from "./schools.js";
-import districtSort from "./district-sort.js";
+import { getNeighborHoods } from "./factories/neighborhoods.js";
+import { getSchools } from "./factories/schools.js";
 
 export const resolvers = {
   Query: {
     schools: async () => {
-      const { schools } = await districtSort(schoolFactory());
-
-      return schools;
+      return Object.values(getSchools());
+    },
+    neighborhoods: async () => {
+      return Object.values(getNeighborHoods());
     },
   },
 };

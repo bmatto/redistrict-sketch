@@ -1,4 +1,4 @@
-type Student {
+export default `type Student {
   name: String
   formattedAddress: String
   latitude: Float
@@ -62,3 +62,4 @@ type Query {
   schools: [School]
   neighborhoods: [Neighborhood]
 }
+`

@@ -1,5 +1,5 @@
-[
-  {
+{
+  "Little Harbor": {
     "name": "Little Harbor",
     "lat": 43.0671615,
     "long": -70.7542339,
@@ -2834,7 +2834,7 @@
     ],
     "capacityOverflowHandled": true
   },
-  {
+  "Dondero": {
     "name": "Dondero",
     "lat": 43.0378247,
     "long": -70.7709701,
@@ -5390,7 +5390,7 @@
     ],
     "capacityOverflowHandled": true
   },
-  {
+  "New Franklin": {
     "name": "New Franklin",
     "lat": 43.0770831,
     "long": -70.7791392,
@@ -7604,4 +7604,4 @@
     ],
     "capacityOverflowHandled": true
   }
-]
+}
