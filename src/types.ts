@@ -1,3 +1,5 @@
+export type SchoolName = "Little Harbor" | "Dondero" | "New Franklin";
+
 export type FeatureProperties = {
   stroke?: string;
   strokeWidth?: number;
@@ -23,6 +25,8 @@ export interface Student {
   longitude: number;
   gradeLevel: number;
   neighbourhood: string;
+  FRL: "F" | "R" | false;
+  IEP: boolean;
 }
 
 export interface School {
@@ -31,17 +35,40 @@ export interface School {
   long: number;
   maxCapacity: number;
   students: Student[];
+  studentCount?: number;
+  properties: FeatureProperties;
   capacityOverflowHandled: boolean;
+  frlCount?: number;
+  iepCount?: number;
+  frlByGradeLevel?: {
+    [key: number]: number;
+  };
+  iepByGradeLevel?: {
+    [key: number]: number;
+  };
 }
 
 export interface Neighborhood {
   name: string;
   students: Student[];
   school?: School;
-  centroid?: {
+  centroid: {
     lat: number;
     long: number;
   };
-  // boundary?: [number, number][];
-  feature?: Feature;
+  feature: Feature;
 }
+
+export type Neighborhoods = {
+  [key: string]: Neighborhood;
+};
+
+export type PartialNeighborhoods = {
+  [key: string]: Partial<Neighborhood>;
+};
+
+export type District = {
+  name: SchoolName;
+  feature: Feature;
+  neighborhoods: Neighborhoods;
+};

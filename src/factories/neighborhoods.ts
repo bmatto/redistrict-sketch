@@ -1,58 +1,39 @@
-import { Neighborhood, Student, Feature } from "../types.js";
+import hull from "@andriiheonia/hull";
 
-const neighborhoods: {
-  [key: string]: Neighborhood;
-} = {};
+import {
+  Neighborhood,
+  Neighborhoods,
+  PartialNeighborhoods,
+  Student,
+  Feature,
+} from "../types.js";
 
-export const getNeighborHoods = () => {
+import geoJson from "../neighborhoods.json" assert { type: "json" };
+
+const neighborhoods: Neighborhoods = {};
+
+type boundary = [number, number][];
+
+export const getNeighborHoods = (): Neighborhoods => {
   return Object.freeze(neighborhoods);
 };
 
-function getNeighborHoodCentroidAndBoundary(students: Student[]): {
-  centroid: { lat: number; long: number };
-  boundary: [number, number][];
-} {
-  let minLatitude = students[0].latitude;
-  let maxLatitude = students[0].latitude;
-  let minLongitude = students[0].longitude;
-  let maxLongitude = students[0].longitude;
+const getBoundaryCentroid = (
+  boundary: boundary
+): { lat: number; long: number } => {
   let latSum = 0;
   let longSum = 0;
 
-  for (const student of students) {
-    latSum += student.latitude;
-    longSum += student.longitude;
-
-    if (student.latitude < minLatitude) {
-      minLatitude = student.latitude;
-    }
-    if (student.latitude > maxLatitude) {
-      maxLatitude = student.latitude;
-    }
-    if (student.longitude < minLongitude) {
-      minLongitude = student.longitude;
-    }
-    if (student.longitude > maxLongitude) {
-      maxLongitude = student.longitude;
-    }
+  for (const point of boundary) {
+    latSum += point[1];
+    longSum += point[0];
   }
 
-  const centroid = {
-    lat: latSum / students.length,
-    long: longSum / students.length,
+  return {
+    lat: latSum / boundary.length,
+    long: longSum / boundary.length,
   };
-
-  const boundary: [number, number][] = [
-    [maxLongitude, maxLatitude],
-    [minLongitude, maxLatitude],
-    [minLongitude, minLatitude],
-    [maxLongitude, minLatitude],
-
-    [maxLongitude, maxLatitude],
-  ];
-
-  return { centroid, boundary };
-}
+};
 
 /**
  * Factory function to create neighborhoods
@@ -63,28 +44,34 @@ function getNeighborHoodCentroidAndBoundary(students: Student[]): {
  * @param students - Array of students
  * @returns Array of neighborhoods
  */
-export default function neighborhoodFactory(students: Student[]): {
-  [key: string]: Neighborhood;
-} {
+export default function neighborhoodFactory(
+  students: Student[]
+): Neighborhoods {
+  const partialNeighborhoods: PartialNeighborhoods = {};
+
   for (const student of students) {
     const neighborhoodName = student.neighbourhood;
 
-    if (!neighborhoods[neighborhoodName]) {
-      neighborhoods[neighborhoodName] = {
-        name: neighborhoodName!,
+    if (!partialNeighborhoods[neighborhoodName]) {
+      partialNeighborhoods[neighborhoodName] = {
+        name: neighborhoodName,
         students: [],
       };
     }
-    neighborhoods[neighborhoodName].students.push(student);
+    partialNeighborhoods[neighborhoodName].students.push(student);
   }
 
-  Object.keys(neighborhoods).forEach((key) => {
-    const { centroid, boundary } = getNeighborHoodCentroidAndBoundary(
-      neighborhoods[key].students
-    );
+  Object.keys(partialNeighborhoods).forEach((key) => {
+    const hood = geoJson.features.find((neighborhood) => {
+      return neighborhood.properties.name === key;
+    });
 
-    neighborhoods[key].centroid! = centroid;
-    // neighborhoods[key].boundary! = boundary;
+    const boundary = hood.geometry.coordinates[0] as boundary;
+    const centroid = getBoundaryCentroid(boundary);
+
+    console.log(`Centroid for ${key} is ${centroid.lat}, ${centroid.long}`);
+
+    partialNeighborhoods[key].centroid = centroid;
 
     const feature: Feature = {
       id: key,
@@ -96,7 +83,8 @@ export default function neighborhoodFactory(students: Student[]): {
       },
     };
 
-    neighborhoods[key].feature = feature;
+    partialNeighborhoods[key].feature = feature;
+    neighborhoods[key] = partialNeighborhoods[key] as Neighborhood;
   });
 
   return neighborhoods;

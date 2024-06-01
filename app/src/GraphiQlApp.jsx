@@ -1,7 +1,9 @@
 import { createGraphiQLFetcher } from "@graphiql/toolkit";
 import { GraphiQL } from "graphiql";
 
-const fetcher = createGraphiQLFetcher({ url: "http://localhost:3000/graphql" });
+const url = import.meta.env.VITE_GRAPHQL_URI;
+
+const fetcher = createGraphiQLFetcher({ url });
 
 export default function GraphiQlPage() {
   return <GraphiQL fetcher={fetcher} />;

@@ -1,6 +1,12 @@
 import { createObjectCsvWriter } from "csv-writer";
 import NodeGeocoder from "node-geocoder";
-import * as path from "path";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+import calculateDistance from "./lib/calculate-distance.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 const MAP_BOX_API_KEY = process.env.MAP_BOX_API_KEY;
@@ -38,13 +44,9 @@ const streets = [
   "Congress Street",
   "Market Street",
   "Deer Street",
-  "Hanover Street",
-  "Bridge Street",
-  "Bartlett Street",
   "Miller Avenue",
   "Marcy Street",
   "Fleet Street",
-  "Russell Street",
   "Court Street",
   "Daniel Street",
   "South Street",
@@ -61,7 +63,6 @@ const streets = [
   "Spinney Road",
   "Greenleaf Avenue",
   "Thornton Street",
-  "Union Street",
   "Maple Haven",
   "Fernald Court",
   "Brewster Street",
@@ -95,7 +96,6 @@ const streets = [
   "Marcy Court",
   "Vaughan Street",
   "High Street",
-  "Pearl Street",
   "Rockland Street",
   "Parker Street",
   "Wibird Street",
@@ -103,12 +103,10 @@ const streets = [
   "Colonial Drive",
   "Banfield Road",
   "Echo Avenue",
-  "Granite Street",
   "Leslie Drive",
   "Cass Street",
   "Wibird Street",
   "Echo Avenue",
-  "Colonial Drive",
   "Rockland Street",
   "Parker Street",
   "Peverly Hill Road",
@@ -128,12 +126,32 @@ const streets = [
   "Salter Street",
   "Gardner Street",
   "Willard Avenue",
-  "Whipple Street",
   "Osprey Drive",
   "Kearsarge Way",
   "Wedgewood Road",
   "Freedom Circle",
   "Beachstone Drive",
+  "Harding Road",
+  "FW Hartford Drive",
+  "Taft Road",
+  "Coolidge Drive",
+  "Denise Street",
+  "Pamela Drive",
+  "Suzanne Drive",
+  "Mariette Drive",
+  "Buckminster Way",
+  "Colonial Drive",
+  "Mason Ave",
+  "Greenside Ave",
+  "Sherbourne Ave",
+  "Holly Lane",
+  "Gosport Road",
+  "Odiorne Point Road",
+  "Essex Ave",
+  "Sheffield Road",
+  "Coakley Road",
+  "Larry Lane",
+  "Blue Heron Drive",
 ];
 
 // Generate random names
@@ -197,18 +215,15 @@ function generateRandomName(): string {
 Promise.resolve(true).then(async () => {
   // Generate sample data
   const data: GeoCodedAddress[] = [];
-  while (data.length < NUM_ROWS) {
+  const dataWithoutNeighbourhood: GeoCodedAddress[] = [];
+  while (data.length + dataWithoutNeighbourhood.length < NUM_ROWS) {
     let geocodedResult;
     const name = generateRandomName();
-    const address = `${Math.floor(Math.random() * 2000) + 1} ${
-      streets[Math.floor(Math.random() * streets.length)]
-    }, Portsmouth, NH 03801`;
+    const number = Math.floor(Math.random() * 1000) + 1;
+    const street = streets[Math.floor(Math.random() * streets.length)];
+    const numberAndStreet = `${number} ${street}`;
+    const address = `${numberAndStreet}, Portsmouth, NH 03801`;
     const gradeLevel = Math.floor(Math.random() * 6);
-
-    // const neighborhood =
-    //   neighborhoods[Math.floor(Math.random() * neighborhoods.length)];
-
-    // // const stub = { name, address, gradeLevel, neighborhood };
 
     try {
       geocodedResult = await geocoder.geocode(address);
@@ -219,26 +234,91 @@ Promise.resolve(true).then(async () => {
 
     const geocoded = geocodedResult[0] as GeoCodedAddress;
 
+    let finalAddress: string;
+    const formattedAddress = geocoded?.formattedAddress;
+
+    if (!formattedAddress || !formattedAddress.includes(street)) {
+      finalAddress = address;
+    } else {
+      finalAddress = formattedAddress;
+    }
+
+    console.log("Geocoded address", finalAddress, geocoded?.neighbourhood);
+
     if (geocoded && geocoded.neighbourhood) {
       console.log("pushing record", name, geocoded.neighbourhood);
+
       data.push({
         name,
         gradeLevel,
-        formattedAddress: geocoded.formattedAddress,
+        formattedAddress: finalAddress,
         latitude: geocoded.latitude,
         longitude: geocoded.longitude,
         neighbourhood: geocoded.neighbourhood,
         zipcode: geocoded.zipcode,
       });
+    } else if (geocoded) {
+      dataWithoutNeighbourhood.push({
+        name,
+        gradeLevel,
+        formattedAddress: finalAddress,
+        latitude: geocoded.latitude,
+        longitude: geocoded.longitude,
+        zipcode: geocoded.zipcode,
+      });
+    } else {
+      console.log("Geocode false", address);
     }
   }
 
-  // for (let i = 0; i < 10; i++) {
+  dataWithoutNeighbourhood.forEach((record) => {
+    const { latitude, longitude } = record;
 
-  // }
+    console.log(
+      "Finding closest record for",
+      record.formattedAddress,
+      latitude,
+      longitude
+    );
+
+    const closestRecord = data.reduce((closest, current) => {
+      const closestLatLong = {
+        latitude: closest.latitude,
+        longitude: closest.longitude,
+      };
+      const currentLatLong = {
+        latitude: current.latitude,
+        longitude: current.longitude,
+      };
+
+      const distanceToClosest = calculateDistance(
+        latitude,
+        longitude,
+        closestLatLong.latitude,
+        closestLatLong.longitude
+      );
+
+      const distanceToCurrent = calculateDistance(
+        latitude,
+        longitude,
+        currentLatLong.latitude,
+        currentLatLong.longitude
+      );
+
+      if (distanceToCurrent < distanceToClosest && current.neighbourhood) {
+        return current;
+      }
+
+      return closest;
+    }, data[0]);
+
+    record.neighbourhood = closestRecord.neighbourhood;
+  });
+
+  data.push(...dataWithoutNeighbourhood);
 
   // Define the CSV file path and writer
-  const csvFilePath = path.join(__dirname, "sample_data.csv");
+  const csvFilePath = join(__dirname, "../", "sample_data.csv");
   const csvWriter = createObjectCsvWriter({
     path: csvFilePath,
     header: [

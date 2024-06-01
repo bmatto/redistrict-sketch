@@ -1,6 +1,6 @@
-import { School, Neighborhood, FeatureProperties } from "../types";
+import { School, SchoolName, Neighborhood, FeatureProperties } from "../types";
 
-type SchoolName = "Little Harbor" | "Dondero" | "New Franklin";
+import calculateDistance from "../lib/calculate-distance.js";
 
 type SchoolProperty = {
   [K in SchoolName]: FeatureProperties;
@@ -43,47 +43,72 @@ const schools: {
     name: SchoolNames.LITTLE_HARBOR,
     lat: 43.0671615,
     long: -70.7542339,
-    maxCapacity: 315,
+    maxCapacity: 320,
     students: [],
     capacityOverflowHandled: false,
+    properties: schoolProperties[SchoolNames.LITTLE_HARBOR],
   },
   [SchoolNames.DONDERO]: {
     name: SchoolNames.DONDERO,
     lat: 43.0378247,
     long: -70.7709701,
-    maxCapacity: 335,
+    maxCapacity: 320,
     students: [],
     capacityOverflowHandled: false,
+    properties: schoolProperties[SchoolNames.DONDERO],
   },
   [SchoolNames.NEW_FRANKLIN]: {
     name: SchoolNames.NEW_FRANKLIN,
     lat: 43.0770831,
     long: -70.7791392,
-    maxCapacity: 250,
+    maxCapacity: 300,
     students: [],
     capacityOverflowHandled: false,
+    properties: schoolProperties[SchoolNames.NEW_FRANKLIN],
   },
 };
 
-function calculateDistance(
-  lat1: number,
-  long1: number,
-  lat2: number,
-  long2: number
-): number {
-  const toRad = (value: number) => (value * Math.PI) / 180;
-  const R = 6371; // km
-  const dLat = toRad(lat2 - lat1);
-  const dLong = toRad(long2 - long1);
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(toRad(lat1)) *
-      Math.cos(toRad(lat2)) *
-      Math.sin(dLong / 2) *
-      Math.sin(dLong / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return R * c;
-}
+// const preConditions = {
+//   ["Osprey Landing"]: SchoolNames.LITTLE_HARBOR,
+// };
+
+const preConditions = {
+  ["Osprey Landing"]: SchoolNames.LITTLE_HARBOR,
+  ["Hillcrest"]: SchoolNames.DONDERO,
+  ["Maplehaven"]: SchoolNames.DONDERO,
+  ["Banfield and Ocean"]: SchoolNames.DONDERO,
+  ["Cedars"]: SchoolNames.DONDERO,
+  ["Elwyn Park"]: SchoolNames.DONDERO,
+  ["Greenleaf"]: SchoolNames.DONDERO,
+  ["Hillside"]: SchoolNames.DONDERO,
+  ["Panaway Manner"]: SchoolNames.NEW_FRANKLIN,
+  ["Lafayette Park"]: SchoolNames.LITTLE_HARBOR,
+  ["Portsmouth Plains"]: SchoolNames.DONDERO,
+  ["Community Campus"]: SchoolNames.DONDERO,
+  ["Tucker's Cove"]: SchoolNames.DONDERO,
+  ["Peverly West"]: SchoolNames.DONDERO,
+  ["Powder House"]: SchoolNames.NEW_FRANKLIN,
+  ["Green Belt"]: SchoolNames.DONDERO,
+  ["PHS"]: SchoolNames.LITTLE_HARBOR,
+  ["Goodwin Park"]: SchoolNames.LITTLE_HARBOR,
+  ["South Mill Pond"]: SchoolNames.LITTLE_HARBOR,
+  ["Strawbery Banke"]: SchoolNames.LITTLE_HARBOR,
+  ["Islington Creek"]: SchoolNames.LITTLE_HARBOR,
+  ["Lincoln"]: SchoolNames.LITTLE_HARBOR,
+  ["Little Harbor"]: SchoolNames.LITTLE_HARBOR,
+  ["Downtown"]: SchoolNames.LITTLE_HARBOR,
+  ["West End Yard"]: SchoolNames.NEW_FRANKLIN,
+  ["Frank Jones"]: SchoolNames.NEW_FRANKLIN,
+  ["Gosling"]: SchoolNames.NEW_FRANKLIN,
+  ["Atlantic Heights"]: SchoolNames.NEW_FRANKLIN,
+  ["Christian Shore"]: SchoolNames.NEW_FRANKLIN,
+  ["New Franklin"]: SchoolNames.NEW_FRANKLIN,
+  ["Cutts Cove"]: SchoolNames.NEW_FRANKLIN,
+  ["Oxford"]: SchoolNames.NEW_FRANKLIN,
+  ["Meadowbrook"]: SchoolNames.NEW_FRANKLIN,
+  ["Borthwick"]: SchoolNames.NEW_FRANKLIN,
+  ["North End"]: SchoolNames.LITTLE_HARBOR,
+};
 
 function sortNeighborhoodsByProximityToSchools(
   neighborhoods: Neighborhood[],
@@ -124,6 +149,26 @@ function assignNeighborhoodsToSchools(
   );
 
   for (const neighborhood of sortedNeighborhoods) {
+    if (preConditions[neighborhood.name]) {
+      const school = schools.find(
+        (school) => school.name === preConditions[neighborhood.name]
+      );
+
+      console.log(
+        "assigning",
+        neighborhood.name,
+        "students to",
+        school.name,
+        "based on preconditions"
+      );
+
+      neighborhood.school = school;
+      neighborhood.feature.properties =
+        schoolProperties[neighborhood.school.name];
+      neighborhood.school.students.push(...neighborhood.students);
+      continue;
+    }
+
     const closestSchool = schools.reduce((prev, curr) => {
       const prevDistance = calculateDistance(
         neighborhood.centroid.lat,
@@ -147,6 +192,7 @@ function assignNeighborhoodsToSchools(
       console.log(
         "assigning",
         neighborhood.name,
+        neighborhood.students.length,
         "students to",
         closestSchool.name
       );
@@ -198,13 +244,13 @@ function assignNeighborhoodsToSchools(
           console.log(
             "assigning",
             neighborhood.name,
+            neighborhood.students.length,
             "students to",
             school.name
           );
 
-          neighborhood.school = closestSchool;
-          neighborhood.feature.properties =
-            schoolProperties[closestSchool.name];
+          neighborhood.school = school;
+          neighborhood.feature.properties = schoolProperties[school.name];
 
           school.students.push(...neighborhood.students);
           reassigned = true;
@@ -239,14 +285,13 @@ function assignNeighborhoodsToSchools(
   }
 }
 
-export const getSchools = () => Object.freeze(schools);
+export const getSchools = (): {
+  [K in SchoolName]: School;
+} => Object.freeze(schools);
 
 export default function schoolFactory(neighborhoods): {
   [K in SchoolName]: School;
 } {
-  //console.log("neighborhoods", neighborhoods);
-  // console.log("schools", schools);
-
   assignNeighborhoodsToSchools(neighborhoods, Object.values(schools));
 
   return schools;

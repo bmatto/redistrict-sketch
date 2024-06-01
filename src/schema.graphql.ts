@@ -7,20 +7,28 @@ export default `type Student {
   neighborhood: String
 }
 
+type ByGrade {
+  grade14: Int
+  grade1: Int
+  grade2: Int
+  grade3: Int
+  grade4: Int
+  grade5: Int
+}
+
 type School {
   name: String
   lat: Float
   long: Float
   maxCapacity: Int
   students: [Student]
+  studentCount: Int
+  properties: Properties
+  frlCount: Int
+  iepCount: Int
+  frlByGradeLevel: ByGrade
+  iepByGradeLevel: ByGrade
 }
-
-# type Neighborhood {
-#   name: String
-#   lat: Float
-#   long: Float
-#   students: [Student]
-# }
 
 type Properties {
   stroke: String
@@ -55,11 +63,28 @@ type Neighborhood {
   feature: Feature
 }
 
+type Grade {
+  id: String
+  grade: Int
+  students: [Student]
+  count: Int
+  numSections: Int
+}
+
+type SchoolWithSection {
+  name: String
+  grades: [Grade]
+}
+
 # The "Query" type is special: it lists all of the available queries that
 # clients can execute, along with the return type for each. In this
 # case, the "books" query returns an array of zero or more Books (defined above).
 type Query {
+  school(schoolName: String): School
   schools: [School]
-  neighborhoods: [Neighborhood]
+  neighborhoods(schoolName: String): [Neighborhood]
+  neighborhoodFeatureGeoJson: [Feature]
+  students: [Student]
+  currentSections: [SchoolWithSection]
 }
 `

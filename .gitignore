@@ -1,4 +1,10 @@
 .env
+.npmrc
 node_modules
 ssh_config
 dist
+psm_data.csv
+psm_frl_elementary.csv
+psm_non_frl_elementary.csv
+finalAssignments.json
+address-fixes.csv

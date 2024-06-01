@@ -5,15 +5,51 @@ import Papa from "papaparse";
 import { School, Student } from "./types.js";
 import neighborhoodFactory from "./factories/neighborhoods.js";
 import schoolFactory from "./factories/schools.js";
+import { studentFactory } from "./factories/students.js";
 
-const CLASS_SIZE = 20;
+const CLASS_SIZE = 19;
 
 function logSchoolAssignments(schools: School[]): String[] {
   const schoolMessages: String[] = [];
 
   for (const school of schools) {
+    const schoolFRL = school.students.filter((student) => {
+      return student.FRL !== false;
+    });
+
+    const schoolIEP = school.students.filter((student) => {
+      return student.IEP !== false;
+    });
+
+    const frlByGradeLevel = schoolFRL.reduce((acc, student) => {
+      if (!acc["grade" + student.gradeLevel]) {
+        acc["grade" + student.gradeLevel] = 0;
+      }
+      acc["grade" + student.gradeLevel]++;
+      return acc;
+    }, {});
+
+    const iepByGradeLevel = schoolIEP.reduce((acc, student) => {
+      if (!acc["grade" + student.gradeLevel]) {
+        acc["grade" + student.gradeLevel] = 0;
+      }
+      acc["grade" + student.gradeLevel]++;
+      return acc;
+    }, {});
+
+    console.log({ iepByGradeLevel });
+    console.log({ frlByGradeLevel });
+
+    school.frlCount = schoolFRL.length;
+    school.iepCount = schoolIEP.length;
+    school.frlByGradeLevel = frlByGradeLevel;
+    school.iepByGradeLevel = iepByGradeLevel;
+
     schoolMessages.push(
-      `School: ${school.name}\nTotal students: ${school.students.length}\n`
+      `\n\nSchool: ${school.name}
+      Total students: ${school.students.length}
+      Free and Reduced Lunch: ${school.frlCount}
+      IEP: ${school.iepCount}\n`
     );
 
     const gradeLevels: { [key: number]: number } = {};
@@ -63,11 +99,12 @@ export default async function main(): Promise<{
   schoolMessages: String[];
 }> {
   try {
-    let students = await loadStudentsFromCSV("sample_data.csv");
+    let students = await loadStudentsFromCSV("psm_data.csv");
     students = students.filter((student) => {
       return student.name && student.formattedAddress.includes("Portsmouth");
     });
 
+    studentFactory(students);
     const neighborhoodsMap = neighborhoodFactory(students);
     const neighborhoods = Object.values(neighborhoodsMap);
     const schools = schoolFactory(neighborhoods);
