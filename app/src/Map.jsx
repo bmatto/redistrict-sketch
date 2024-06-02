@@ -38,6 +38,18 @@ export default function Map() {
   useEffect(() => {
     if (loading) return;
 
+    // Initialize the map
+    mapBoxRef.current = new mapboxgl.Map({
+      container: mapRef.current,
+      center: [-70.7626, 43.0718],
+      zoom: 13,
+    });
+
+    mapBoxRef.current.addControl(new mapboxgl.NavigationControl());
+    mapBoxRef.current.addControl(new mapboxgl.FullscreenControl(), "top-right");
+    mapBoxRef.current.addControl(new mapboxgl.ScaleControl(), "top-left");
+    mapBoxRef.current.addControl(new mapboxgl.GeolocateControl(), "top-right");
+
     mapBoxRef.current.on("style.load", () => {
       mapBoxRef.current.setFog({});
 
@@ -109,19 +121,19 @@ export default function Map() {
     });
   }, [loading, data]);
 
-  useEffect(() => {
-    // Initialize the map
-    mapBoxRef.current = new mapboxgl.Map({
-      container: mapRef.current,
-      center: [-70.7626, 43.0718],
-      zoom: 13,
-    });
+  // useEffect(() => {
+  //   // Initialize the map
+  //   mapBoxRef.current = new mapboxgl.Map({
+  //     container: mapRef.current,
+  //     center: [-70.7626, 43.0718],
+  //     zoom: 13,
+  //   });
 
-    mapBoxRef.current.addControl(new mapboxgl.NavigationControl());
-    mapBoxRef.current.addControl(new mapboxgl.FullscreenControl(), "top-right");
-    mapBoxRef.current.addControl(new mapboxgl.ScaleControl(), "top-left");
-    mapBoxRef.current.addControl(new mapboxgl.GeolocateControl(), "top-right");
-  }, []);
+  //   mapBoxRef.current.addControl(new mapboxgl.NavigationControl());
+  //   mapBoxRef.current.addControl(new mapboxgl.FullscreenControl(), "top-right");
+  //   mapBoxRef.current.addControl(new mapboxgl.ScaleControl(), "top-left");
+  //   mapBoxRef.current.addControl(new mapboxgl.GeolocateControl(), "top-right");
+  // }, []);
 
   return (
     <div
