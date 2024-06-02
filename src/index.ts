@@ -23,31 +23,22 @@ const server = new ApolloServer({
   csrfPrevention: true,
   typeDefs: schema,
   cache: "bounded",
+  introspection: true,
   plugins: [
     ApolloServerPluginDrainHttpServer({ httpServer }),
     ApolloServerPluginLandingPageLocalDefault({ embed: true }),
   ],
 });
 
-// Endpoint for school data analysis
-app.get("/school-data", async (req, res) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  // res.send({
-  //   schools,
-  //   schoolMessages,
-  // });
+app.get("/", (req, res) => {
+  res.send("Hello World");
 });
 
 app.listen(port, async () => {
+  await districtSort();
   await server.start();
 
-  await districtSort();
-
-  server.applyMiddleware({ app, path: "/graphql" });
+  server.applyMiddleware({ app, path: "/graphql", cors: true });
 
   console.log(`Server is running on port ${port}`);
 });
