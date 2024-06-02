@@ -49,6 +49,8 @@ export default function Map() {
       data.neighborhoods.forEach((neighborhood) => {
         const { name, centroid, school, feature } = neighborhood;
 
+        console.log(name, centroid, school);
+
         mapBoxRef.current.addSource(name, {
           type: "geojson",
           data: {
