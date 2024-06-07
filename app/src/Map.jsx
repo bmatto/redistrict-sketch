@@ -29,7 +29,7 @@ const query = gql`
 
 mapboxgl.accessToken = import.meta.env.VITE_MAP_BOX_API_KEY;
 
-export default function Map() {
+export default function Map({ showAssignments = false }) {
   const mapRef = useRef(null);
   const mapBoxRef = useRef(null);
 
@@ -61,7 +61,7 @@ export default function Map() {
       data.neighborhoods.forEach((neighborhood) => {
         const { name, centroid, school, feature } = neighborhood;
 
-        console.log(name, centroid, school);
+        const fillColor = showAssignments ? school.properties.fill : "#000";
 
         mapBoxRef.current.addSource(name, {
           type: "geojson",
@@ -76,7 +76,7 @@ export default function Map() {
           type: "fill",
           source: name,
           paint: {
-            "fill-color": school.properties.fill,
+            "fill-color": fillColor,
             "fill-opacity": 0.66,
             "fill-outline-color": "#000",
           },
