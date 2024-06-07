@@ -1,6 +1,7 @@
 import { School, SchoolName, Neighborhood, FeatureProperties } from "../types";
 
 import calculateDistance from "../lib/calculate-distance.js";
+import estimateSections from "../lib/estimate-sections.js";
 
 type SchoolProperty = {
   [K in SchoolName]: FeatureProperties;
@@ -44,6 +45,7 @@ const schools: {
     lat: 43.0671615,
     long: -70.7542339,
     maxCapacity: 320,
+    maxSections: 20,
     students: [],
     capacityOverflowHandled: false,
     properties: schoolProperties[SchoolNames.LITTLE_HARBOR],
@@ -53,6 +55,7 @@ const schools: {
     lat: 43.0378247,
     long: -70.7709701,
     maxCapacity: 320,
+    maxSections: 19,
     students: [],
     capacityOverflowHandled: false,
     properties: schoolProperties[SchoolNames.DONDERO],
@@ -62,6 +65,7 @@ const schools: {
     lat: 43.0770831,
     long: -70.7791392,
     maxCapacity: 300,
+    maxSections: 15,
     students: [],
     capacityOverflowHandled: false,
     properties: schoolProperties[SchoolNames.NEW_FRANKLIN],
@@ -293,6 +297,14 @@ export default function schoolFactory(neighborhoods): {
   [K in SchoolName]: School;
 } {
   assignNeighborhoodsToSchools(neighborhoods, Object.values(schools));
+
+  Object.keys(schools).forEach((schoolName) => {
+    const school = schools[schoolName];
+    school.sectionsByGrade = estimateSections(
+      school.students,
+      school.maxSections
+    );
+  });
 
   return schools;
 }

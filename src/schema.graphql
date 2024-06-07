@@ -1,10 +1,8 @@
 type Student {
-  name: String
-  formattedAddress: String
-  latitude: Float
-  longitude: Float
   gradeLevel: Int
-  neighborhood: String
+  neighbourhood: String
+  formattedAddress: String
+  name: String
 }
 
 type ByGrade {
@@ -16,6 +14,22 @@ type ByGrade {
   grade5: Int
 }
 
+type NewGrade {
+  numSections: Int
+  sections: [[Student]]
+  numStudents: Int
+  sectionSize: Int
+}
+
+type SectionsByGrade {
+  grade14: NewGrade
+  grade1: NewGrade
+  grade2: NewGrade
+  grade3: NewGrade
+  grade4: NewGrade
+  grade5: NewGrade
+}
+
 type School {
   name: String
   lat: Float
@@ -23,6 +37,8 @@ type School {
   maxCapacity: Int
   students: [Student]
   studentCount: Int
+  sectionCount: Int
+  sectionsByGrade: SectionsByGrade
   properties: Properties
   frlCount: Int
   iepCount: Int
@@ -84,6 +100,6 @@ type Query {
   schools: [School]
   neighborhoods(schoolName: String): [Neighborhood]
   neighborhoodFeatureGeoJson: [Feature]
-  students: [Student]
+  students(neighbourhood: String): [Student]
   currentSections: [SchoolWithSection]
 }

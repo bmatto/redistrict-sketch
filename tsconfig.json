@@ -1,18 +1,17 @@
 {
   "compilerOptions": {
     "rootDirs": ["src", "app"],
-    "outDir": "dist",
+    "outDir": "api",
     "lib": ["es2020", "dom"],
     "target": "es2020",
     "module": "esnext",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "types": ["node"],
-    "resolveJsonModule": true,
-
     "typeRoots": ["node_modules/@types", "src/@types"]
   },
   "include": ["src/**/*"],
   "files": ["src/@types/graphql.d.ts"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "api", "dist"]
 }

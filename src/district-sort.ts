@@ -1,11 +1,16 @@
 //import * as Papa from "papaparse";
 import fs from "fs";
 import Papa from "papaparse";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 
 import { School, Student } from "./types.js";
 import neighborhoodFactory from "./factories/neighborhoods.js";
 import schoolFactory from "./factories/schools.js";
 import { studentFactory } from "./factories/students.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const CLASS_SIZE = 19;
 
@@ -99,16 +104,23 @@ export default async function main(): Promise<{
   schoolMessages: String[];
 }> {
   try {
-    let students = await loadStudentsFromCSV("psm_data.csv");
+    const csvFilePath = join(__dirname, "psm_data.csv");
+
+    let students = await loadStudentsFromCSV(csvFilePath);
     students = students.filter((student) => {
-      return student.name && student.formattedAddress.includes("Portsmouth");
+      return (
+        student.name &&
+        student.formattedAddress.includes("Portsmouth") &&
+        !student.name.includes("Test Student")
+      );
     });
 
-    studentFactory(students);
     const neighborhoodsMap = neighborhoodFactory(students);
     const neighborhoods = Object.values(neighborhoodsMap);
     const schools = schoolFactory(neighborhoods);
     const schoolMessages = logSchoolAssignments(Object.values(schools));
+
+    studentFactory(schools);
 
     fs.writeFileSync("finalAssignments.json", JSON.stringify(schools, null, 2));
 
@@ -118,5 +130,3 @@ export default async function main(): Promise<{
     throw error;
   }
 }
-
-// main(schoolFactory());

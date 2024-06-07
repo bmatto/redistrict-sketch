@@ -1,5 +1,6 @@
-import hull from "@andriiheonia/hull";
-
+import fs from "fs";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 import {
   Neighborhood,
   Neighborhoods,
@@ -8,7 +9,11 @@ import {
   Feature,
 } from "../types.js";
 
-import geoJson from "../neighborhoods.json" assert { type: "json" };
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const geoJsonPath = join(__dirname, "../", "neighborhoods.json");
+
+const geoJson = JSON.parse(fs.readFileSync(geoJsonPath, "utf-8"));
 
 const neighborhoods: Neighborhoods = {};
 

@@ -4,7 +4,7 @@ import neighborhoodFactory, {
 } from "./factories/neighborhoods.js";
 import { getSchools } from "./factories/schools.js";
 import { getStudents } from "./factories/students.js";
-import { School } from "./types.js";
+import { School, Student } from "./types.js";
 
 export const resolvers = {
   Query: {
@@ -26,6 +26,14 @@ export const resolvers = {
 
       schools.forEach((school) => {
         school.studentCount = school.students.length;
+        const grades = Object.values(school.sectionsByGrade);
+
+        school.sectionCount = grades.reduce((acc, grade) => {
+          acc += grade.sections.length;
+          return acc;
+        }, 0);
+
+        console.log(school.name, school.sectionCount, school.studentCount);
       });
 
       return schools;
@@ -51,8 +59,16 @@ export const resolvers = {
           return n.geometry.coordinates[0].length > 3;
         });
     },
-    students: () => {
-      return getStudents();
+    students: (__parent, args) => {
+      const students = getStudents();
+
+      if (args.neighbourhood) {
+        return students.filter(
+          (student) => student.neighbourhood === args.neighbourhood
+        );
+      }
+
+      return students;
     },
     currentSections: (__parent, args: { schoolName: string }) => {
       const classSize = 19;

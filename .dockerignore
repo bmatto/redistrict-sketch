@@ -2,8 +2,9 @@
 .npmrc
 node_modules
 ssh_config
+src
 dist
-api
+app
 psm_data.csv
 psm_frl_elementary.csv
 psm_non_frl_elementary.csv
