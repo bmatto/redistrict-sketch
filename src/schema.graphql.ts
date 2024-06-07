@@ -1,8 +1,8 @@
 export default `type Student {
   gradeLevel: Int
   neighbourhood: String
-  formattedAddress: String
-  name: String
+  # formattedAddress: String
+  # name: String
 }
 
 type ByGrade {
