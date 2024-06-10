@@ -29,11 +29,19 @@ const query = gql`
 
 mapboxgl.accessToken = import.meta.env.VITE_MAP_BOX_API_KEY;
 
-export default function Map({ showAssignments = false }) {
+export default function Map({
+  showAssignments = false,
+}: {
+  showAssignments: boolean;
+}) {
   const mapRef = useRef(null);
   const mapBoxRef = useRef(null);
 
-  const { loading, error, data } = useQuery(query);
+  const { loading, error, data, refetch } = useQuery(query);
+
+  setInterval(() => {
+    refetch();
+  }, 2000);
 
   useEffect(() => {
     if (loading) return;
@@ -119,7 +127,7 @@ export default function Map({ showAssignments = false }) {
         },
       });
     });
-  }, [loading, data]);
+  }, [loading, data, showAssignments]);
 
   // useEffect(() => {
   //   // Initialize the map

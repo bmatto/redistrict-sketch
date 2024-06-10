@@ -3,6 +3,10 @@ import { School, SchoolName, Neighborhood, FeatureProperties } from "../types";
 import calculateDistance from "../lib/calculate-distance.js";
 import estimateSections from "../lib/estimate-sections.js";
 
+type Schools = {
+  [K in SchoolName]: School;
+};
+
 type SchoolProperty = {
   [K in SchoolName]: FeatureProperties;
 };
@@ -37,9 +41,7 @@ export const schoolProperties: SchoolProperty = {
   },
 };
 
-const schools: {
-  [K in SchoolName]: School;
-} = {
+let schools: Schools = {
   [SchoolNames.LITTLE_HARBOR]: {
     name: SchoolNames.LITTLE_HARBOR,
     lat: 43.0671615,
@@ -72,9 +74,11 @@ const schools: {
   },
 };
 
-// const preConditions = {
-//   ["Osprey Landing"]: SchoolNames.LITTLE_HARBOR,
-// };
+const initialSchools = JSON.stringify(schools);
+
+let assignedConditions: {
+  [neighborhood: string]: SchoolName;
+} = {};
 
 const preConditions = {
   ["Osprey Landing"]: SchoolNames.LITTLE_HARBOR,
@@ -86,13 +90,17 @@ const preConditions = {
   ["Greenleaf"]: SchoolNames.DONDERO,
   ["Hillside"]: SchoolNames.DONDERO,
   ["Panaway Manner"]: SchoolNames.NEW_FRANKLIN,
-  ["Lafayette Park"]: SchoolNames.LITTLE_HARBOR,
+  ["Lafayette Park"]: SchoolNames.DONDERO,
   ["Portsmouth Plains"]: SchoolNames.DONDERO,
   ["Community Campus"]: SchoolNames.DONDERO,
-  ["Tucker's Cove"]: SchoolNames.DONDERO,
+  ["Tucker's Cove"]: SchoolNames.LITTLE_HARBOR,
   ["Peverly West"]: SchoolNames.DONDERO,
   ["Powder House"]: SchoolNames.NEW_FRANKLIN,
   ["Green Belt"]: SchoolNames.DONDERO,
+  ["Lang Eastwood"]: SchoolNames.DONDERO,
+  ["Beachstone"]: SchoolNames.DONDERO,
+  ["Patriots Park"]: SchoolNames.DONDERO,
+  ["Cedars Springbrook"]: SchoolNames.DONDERO,
   ["PHS"]: SchoolNames.LITTLE_HARBOR,
   ["Goodwin Park"]: SchoolNames.LITTLE_HARBOR,
   ["South Mill Pond"]: SchoolNames.LITTLE_HARBOR,
@@ -145,17 +153,33 @@ function sortNeighborhoodsByProximityToSchools(
 
 function assignNeighborhoodsToSchools(
   neighborhoods: Neighborhood[],
-  schools: School[]
+  schools: School[],
+  assignments = []
 ): void {
   const sortedNeighborhoods = sortNeighborhoodsByProximityToSchools(
     neighborhoods,
     schools
   );
 
+  const assignmentConditions = assignments.reduce((acc, assignment) => {
+    const schoolName = assignment.schoolName;
+
+    assignment.neighborhoods.forEach((neighborhood) => {
+      acc[neighborhood] = schoolName;
+    });
+
+    return acc;
+  }, {});
+
+  assignedConditions = {
+    ...preConditions,
+    ...assignmentConditions,
+  };
+
   for (const neighborhood of sortedNeighborhoods) {
-    if (preConditions[neighborhood.name]) {
+    if (assignedConditions[neighborhood.name]) {
       const school = schools.find(
-        (school) => school.name === preConditions[neighborhood.name]
+        (school) => school.name === assignedConditions[neighborhood.name]
       );
 
       console.log(
@@ -163,7 +187,7 @@ function assignNeighborhoodsToSchools(
         neighborhood.name,
         "students to",
         school.name,
-        "based on preconditions"
+        "based on conditions"
       );
 
       neighborhood.school = school;
@@ -293,10 +317,21 @@ export const getSchools = (): {
   [K in SchoolName]: School;
 } => Object.freeze(schools);
 
-export default function schoolFactory(neighborhoods): {
+export const getConditions = () => Object.freeze(assignedConditions);
+
+export default function schoolFactory(
+  neighborhoods,
+  assignments?
+): {
   [K in SchoolName]: School;
 } {
-  assignNeighborhoodsToSchools(neighborhoods, Object.values(schools));
+  schools = JSON.parse(initialSchools);
+
+  assignNeighborhoodsToSchools(
+    neighborhoods,
+    Object.values(schools),
+    assignments
+  );
 
   Object.keys(schools).forEach((schoolName) => {
     const school = schools[schoolName];

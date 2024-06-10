@@ -42,6 +42,7 @@ type School {
   properties: Properties
   frlCount: Int
   iepCount: Int
+  num504: Int
   frlByGradeLevel: ByGrade
   iepByGradeLevel: ByGrade
 }
@@ -92,6 +93,16 @@ type SchoolWithSection {
   grades: [Grade]
 }
 
+type AssignedCondition {
+  schoolName: String
+  neighborhoods: [String]
+}
+
+input AssignmentInput {
+  schoolName: String
+  neighborhoods: [String]
+}
+
 # The "Query" type is special: it lists all of the available queries that
 # clients can execute, along with the return type for each. In this
 # case, the "books" query returns an array of zero or more Books (defined above).
@@ -102,5 +113,10 @@ type Query {
   neighborhoodFeatureGeoJson: [Feature]
   students(neighbourhood: String): [Student]
   currentSections: [SchoolWithSection]
+  assignedConditions: [AssignedCondition]
+}
+
+type Mutation {
+  setNeighborhoods(assignments: [AssignmentInput]): [Neighborhood]
 }
 `

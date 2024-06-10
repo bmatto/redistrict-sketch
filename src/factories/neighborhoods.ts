@@ -15,7 +15,7 @@ const geoJsonPath = join(__dirname, "../", "neighborhoods.json");
 
 const geoJson = JSON.parse(fs.readFileSync(geoJsonPath, "utf-8"));
 
-const neighborhoods: Neighborhoods = {};
+let neighborhoods: Neighborhoods = {};
 
 type boundary = [number, number][];
 
@@ -52,6 +52,8 @@ const getBoundaryCentroid = (
 export default function neighborhoodFactory(
   students: Student[]
 ): Neighborhoods {
+  neighborhoods = {};
+
   const partialNeighborhoods: PartialNeighborhoods = {};
 
   for (const student of students) {

@@ -42,11 +42,13 @@ function logSchoolAssignments(schools: School[]): String[] {
       return acc;
     }, {});
 
-    console.log({ iepByGradeLevel });
-    console.log({ frlByGradeLevel });
+    const school504 = school.students.filter((student) => {
+      return student["504"] !== false;
+    });
 
     school.frlCount = schoolFRL.length;
     school.iepCount = schoolIEP.length;
+    school.num504 = school504.length;
     school.frlByGradeLevel = frlByGradeLevel;
     school.iepByGradeLevel = iepByGradeLevel;
 
@@ -100,7 +102,7 @@ function loadStudentsFromCSV(filePath: string): Promise<Student[]> {
   });
 }
 
-export default async function main(): Promise<{
+export default async function main(assignments?): Promise<{
   schoolMessages: String[];
 }> {
   try {
@@ -117,7 +119,7 @@ export default async function main(): Promise<{
 
     const neighborhoodsMap = neighborhoodFactory(students);
     const neighborhoods = Object.values(neighborhoodsMap);
-    const schools = schoolFactory(neighborhoods);
+    const schools = schoolFactory(neighborhoods, assignments);
     const schoolMessages = logSchoolAssignments(Object.values(schools));
 
     studentFactory(schools);

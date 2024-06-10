@@ -6,11 +6,11 @@
 }
 
 .mapContainer {
-  flex: 8;
+  flex: 7;
 }
 
 .mapInfoContainer {
-  flex: 2;
+  flex: 3;
   height: 100vh;
 }
 
@@ -20,4 +20,5 @@
   overflow: auto;
   background-color: #efefef;
   border-right: 2px solid #777;
+  box-sizing: border-box;
 }

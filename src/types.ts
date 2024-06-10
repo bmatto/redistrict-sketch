@@ -59,6 +59,7 @@ export interface School {
   capacityOverflowHandled: boolean;
   frlCount?: number;
   iepCount?: number;
+  num504?: number;
   frlByGradeLevel?: {
     [key: number]: number;
   };

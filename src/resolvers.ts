@@ -2,9 +2,10 @@ import { __, prop, groupBy, count } from "ramda";
 import neighborhoodFactory, {
   getNeighborHoods,
 } from "./factories/neighborhoods.js";
-import { getSchools } from "./factories/schools.js";
+import { getSchools, getConditions } from "./factories/schools.js";
 import { getStudents } from "./factories/students.js";
-import { School, Student } from "./types.js";
+import districtSort from "./district-sort.js";
+import { School } from "./types.js";
 
 export const resolvers = {
   Query: {
@@ -60,6 +61,8 @@ export const resolvers = {
         });
     },
     students: (__parent, args) => {
+      // This doesn't do anything yet
+
       const students = getStudents();
 
       if (args.neighbourhood) {
@@ -105,6 +108,42 @@ export const resolvers = {
           grades: grades,
         };
       });
+    },
+    assignedConditions: (): Array<{
+      schoolName: string;
+      neighborhoods: string[];
+    }> => {
+      const assignedConditions = getConditions();
+
+      return Object.keys(assignedConditions).reduce((acc, key) => {
+        const schoolName = assignedConditions[key];
+        const schoolAssignments = acc.find((a) => a.schoolName === schoolName);
+
+        if (schoolAssignments) {
+          schoolAssignments.neighborhoods.push(key);
+          return acc;
+        }
+
+        acc.push({
+          schoolName,
+          neighborhoods: [key],
+        });
+
+        return acc;
+      }, []);
+    },
+  },
+  Mutation: {
+    setNeighborhoods: async (__parent, args) => {
+      console.log("Setting neighborhoods", args);
+
+      const { assignments } = args;
+
+      await districtSort(assignments);
+
+      const neighborhoods = Object.values(getNeighborHoods());
+
+      return neighborhoods;
     },
   },
 };
