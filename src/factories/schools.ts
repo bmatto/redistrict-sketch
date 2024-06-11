@@ -120,6 +120,8 @@ const preConditions = {
   ["Meadowbrook"]: SchoolNames.NEW_FRANKLIN,
   ["Borthwick"]: SchoolNames.NEW_FRANKLIN,
   ["North End"]: SchoolNames.LITTLE_HARBOR,
+  ["Winchester"]: SchoolNames.LITTLE_HARBOR,
+  ["Jones"]: SchoolNames.LITTLE_HARBOR,
 };
 
 function sortNeighborhoodsByProximityToSchools(
