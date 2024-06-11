@@ -93,6 +93,10 @@ type SchoolWithSection {
   grades: [Grade]
 }
 
+type Success {
+  success: Boolean
+}
+
 type AssignedCondition {
   schoolName: String
   neighborhoods: [String]
@@ -118,5 +122,6 @@ type Query {
 
 type Mutation {
   setNeighborhoods(assignments: [AssignmentInput]): [Neighborhood]
+  reset: Success
 }
 `

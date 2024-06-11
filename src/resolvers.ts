@@ -145,5 +145,14 @@ export const resolvers = {
 
       return neighborhoods;
     },
+    reset: async (__parent, args) => {
+      console.log("Resetting");
+
+      await districtSort([]);
+
+      return {
+        success: true,
+      };
+    },
   },
 };

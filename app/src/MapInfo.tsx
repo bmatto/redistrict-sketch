@@ -12,6 +12,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 
 import SchoolData from "./SchoolData";
+import Reset from "./Reset";
 
 import styles from "./MapApp.module.css";
 
@@ -287,7 +288,10 @@ export default function MapInfo() {
       ) : error ? (
         <p>Error: {error.message}</p>
       ) : (
-        <NeighborhoodAssignment data={data} />
+        <>
+          <NeighborhoodAssignment data={data} />
+          <Reset />
+        </>
       )}
     </div>
   );
