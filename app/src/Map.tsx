@@ -4,7 +4,7 @@ import { useQuery, gql } from "@apollo/client";
 import mapboxgl from "mapbox-gl";
 
 const query = gql`
-  query MyQuery {
+  query MappingQuery {
     neighborhoods {
       name
       centroid {
@@ -37,11 +37,9 @@ export default function Map({
   const mapRef = useRef(null);
   const mapBoxRef = useRef(null);
 
-  const { loading, error, data, refetch } = useQuery(query);
-
-  setInterval(() => {
-    refetch();
-  }, 2000);
+  const { loading, error, data } = useQuery(query, {
+    fetchPolicy: "network-only",
+  });
 
   useEffect(() => {
     if (loading) return;

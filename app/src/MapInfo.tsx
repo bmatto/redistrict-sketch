@@ -67,7 +67,7 @@ const query = gql`
     sectionSize
   }
 
-  query MyQuery {
+  query MapInfoQuery {
     neighborhoods {
       name
     }
@@ -110,22 +110,6 @@ const setNeighborhoodsMutationDocument = gql`
   mutation SetNeighborhoods($assignments: [AssignmentInput]!) {
     setNeighborhoods(assignments: $assignments) {
       name
-      centroid {
-        lat
-        long
-      }
-      school {
-        name
-        properties {
-          fill
-        }
-      }
-      feature {
-        geometry {
-          type
-          coordinates
-        }
-      }
     }
   }
 `;
@@ -153,8 +137,6 @@ const SchoolAssignmentSelect = ({
   setDirty,
 }) => {
   const sortedNeighborhoods = neighborhoods.map(({ name }) => name).sort();
-
-  console.log(neighborhoodAssignments);
 
   const [schoolNeighborhoods, setSchoolNeighborhoods] = useState<string[]>(
     neighborhoodAssignments[school.name] || []
@@ -209,13 +191,7 @@ const SchoolAssignmentSelect = ({
   );
 };
 
-const NeighborhoodAssignment = ({
-  data,
-  refetch,
-}: {
-  data: Data;
-  refetch: () => void;
-}) => {
+const NeighborhoodAssignment = ({ data }: { data: Data }) => {
   const initialNeighborhoodAssignments = data.assignedConditions.reduce(
     (acc, ac) => {
       const schoolName = ac.schoolName;
@@ -238,8 +214,12 @@ const NeighborhoodAssignment = ({
   const [neighborhoodAssignments, setNeighborhoodAssignments] = useState(
     initialNeighborhoodAssignments
   );
-  const [setNeighborhoodsMutation, { data: mutationData, loading, error }] =
-    useMutation(setNeighborhoodsMutationDocument);
+  const [setNeighborhoodsMutation] = useMutation(
+    setNeighborhoodsMutationDocument,
+    {
+      refetchQueries: ["MapInfoQuery", "MappingQuery"],
+    }
+  );
 
   useEffect(() => {
     // Do some graphql mutation thing?
@@ -261,10 +241,6 @@ const NeighborhoodAssignment = ({
         assignments: assignmentsAsMutationArgument,
       },
     });
-
-    setTimeout(() => {
-      refetch();
-    }, 1000);
   }, [neighborhoodAssignments, isDirty]);
 
   return (
@@ -296,13 +272,13 @@ export default function MapInfo() {
     loading,
     error,
     data,
-    refetch,
   }: {
     loading: boolean;
     error?: any;
     data?: Data;
-    refetch: () => void;
-  } = useQuery(query);
+  } = useQuery(query, {
+    fetchPolicy: "network-only",
+  });
 
   return (
     <div className={styles.mapInfo}>
@@ -311,7 +287,7 @@ export default function MapInfo() {
       ) : error ? (
         <p>Error: {error.message}</p>
       ) : (
-        <NeighborhoodAssignment data={data} refetch={refetch} />
+        <NeighborhoodAssignment data={data} />
       )}
     </div>
   );

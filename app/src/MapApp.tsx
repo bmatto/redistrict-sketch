@@ -5,8 +5,6 @@ import MapInfo from "./MapInfo";
 import styles from "./MapApp.module.css";
 
 export default function MapApp() {
-  console.log(window.location.search);
-
   const [showAssignments, setShowAssignments] = useState(() => {
     const searchParams = new URLSearchParams(window.location.search);
     return searchParams.has("showAssignments");
