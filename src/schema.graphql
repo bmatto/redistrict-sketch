@@ -1,7 +1,10 @@
 type Student {
   gradeLevel: Int
   neighbourhood: String
-  # formattedAddress: String
+  latitude: Float
+  longitude: Float
+  School: String
+  formattedAddress: String
   # name: String
 }
 
@@ -78,6 +81,12 @@ type Neighborhood {
   boundary: [[Float]]
   centroid: Coordinate
   feature: Feature
+  gradeLevelCounts: [GradeLevelCount]
+}
+
+type GradeLevelCount {
+  gradeLevel: Int
+  count: Int
 }
 
 type Grade {

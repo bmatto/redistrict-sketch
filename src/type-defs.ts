@@ -24,6 +24,12 @@ type Neighborhood {
   lat: Float
   long: Float
   students: [Student]
+  gradeLevelCounts: [GradeLevelCount]
+}
+
+type GradeLevelCount {
+  gradeLevel: Int
+  count: Int
 }
 
 # The "Query" type is special: it lists all of the available queries that

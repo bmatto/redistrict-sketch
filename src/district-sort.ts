@@ -112,7 +112,7 @@ export default async function main(assignments?): Promise<{
     students = students.filter((student) => {
       return (
         student.name &&
-        student.formattedAddress.includes("Portsmouth") &&
+        // student.formattedAddress.includes("Portsmouth") &&
         !student.name.includes("Test Student")
       );
     });

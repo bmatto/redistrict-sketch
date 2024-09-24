@@ -1,4 +1,4 @@
-import { __, prop, groupBy, count } from "ramda";
+import { __, prop, groupBy } from "ramda";
 import neighborhoodFactory, {
   getNeighborHoods,
 } from "./factories/neighborhoods.js";
@@ -42,6 +42,18 @@ export const resolvers = {
     neighborhoods: (__parent, args) => {
       const { schoolName } = args;
       const neighborhoods = Object.values(getNeighborHoods());
+
+      neighborhoods.map((neighborhood) => {
+        neighborhood.gradeLevelCounts = Object.values(
+          // @ts-ignore
+          groupBy(prop("gradeLevel"), neighborhood.students)
+        ).map((students) => {
+          return {
+            gradeLevel: students[0].gradeLevel,
+            count: students.length,
+          };
+        });
+      });
 
       if (schoolName) {
         return neighborhoods.filter(

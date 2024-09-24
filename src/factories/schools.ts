@@ -44,8 +44,8 @@ export const schoolProperties: SchoolProperty = {
 let schools: Schools = {
   [SchoolNames.LITTLE_HARBOR]: {
     name: SchoolNames.LITTLE_HARBOR,
-    lat: 43.0671615,
-    long: -70.7542339,
+    lat: 43.066974,
+    long: -70.7532543,
     maxCapacity: 320,
     maxSections: 20,
     students: [],
@@ -81,6 +81,7 @@ let assignedConditions: {
 } = {};
 
 const preConditions = {
+  ["Wamesit Place"]: SchoolNames.DONDERO,
   ["Osprey Landing"]: SchoolNames.LITTLE_HARBOR,
   ["Hillcrest"]: SchoolNames.DONDERO,
   ["Maplehaven"]: SchoolNames.DONDERO,
@@ -109,7 +110,7 @@ const preConditions = {
   ["Lincoln"]: SchoolNames.LITTLE_HARBOR,
   ["Little Harbor"]: SchoolNames.LITTLE_HARBOR,
   ["Downtown"]: SchoolNames.LITTLE_HARBOR,
-  ["West End Yard"]: SchoolNames.NEW_FRANKLIN,
+  ["West End Yard"]: SchoolNames.LITTLE_HARBOR,
   ["Frank Jones"]: SchoolNames.NEW_FRANKLIN,
   ["Gosling"]: SchoolNames.NEW_FRANKLIN,
   ["Atlantic Heights"]: SchoolNames.NEW_FRANKLIN,

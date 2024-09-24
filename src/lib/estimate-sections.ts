@@ -10,12 +10,12 @@ const maxSectionsPerGrade = 5;
 const minSectionsPerGrade = 3;
 
 const gradeSectionSizeMap = {
-  grade14: [14, 17],
-  grade1: [14, 17],
-  grade2: [14, 17],
-  grade3: [14, 17],
-  grade4: [15, 19],
-  grade5: [15, 19],
+  grade14: [14, 18],
+  grade1: [14, 20],
+  grade2: [14, 20],
+  grade3: [14, 20],
+  grade4: [15, 20],
+  grade5: [15, 20],
 };
 
 function assignStudentsToSections(
@@ -28,10 +28,16 @@ function assignStudentsToSections(
   console.log({ sectionSizeOverride });
 
   for (const grade in studentsByGrade) {
+    const withOverride = minSectionsPerGrade + sectionSizeOverride;
+
     const [minSectionSize, maxSectionSize] = gradeSectionSizeMap[grade];
-    const sectionSize = sectionSizeOverride
+    let sectionSize = sectionSizeOverride
       ? minSectionSize + sectionSizeOverride
       : minSectionSize;
+
+    if (sectionSize > maxSectionSize) {
+      sectionSize = maxSectionSize;
+    }
     const studentsInGrade = studentsByGrade[grade];
     const sectionsInGrade = Math.ceil(
       studentsByGrade[grade].length / sectionSize

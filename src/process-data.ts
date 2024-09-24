@@ -24,16 +24,21 @@ type NEIGHBORHOOD_GEO_JSON = {
 };
 
 type PSM_STUDENT = {
-  "Student #": number;
   Last: string;
   First: string;
+  PIN: number;
   Grade: number;
   Gender: "M" | "F";
+  School: string;
+  "Street Name": string;
   "Address 1": string;
   "Address 2": string;
-  "IEP Yes": 1 | null;
-  "504 Yes": 1 | null;
-  "School Calendar": string;
+  "Parent Last": string;
+  "Parent First": string;
+  Relationship: string;
+  IEP?: "Yes" | "No";
+  "504"?: "Yes" | "No";
+  FRL?: "Yes" | "No";
 };
 
 type GeoCodedStudent = {
@@ -53,8 +58,8 @@ type GeoCodedStudent = {
   provider?: string;
   IEP?: boolean;
   "504"?: boolean;
-  "School Calendar"?: string;
-  FRL?: "F" | "R" | false;
+  School?: string;
+  FRL?: boolean;
 };
 
 const __filename = fileURLToPath(import.meta.url);
@@ -79,7 +84,7 @@ const csvWriter = createObjectCsvWriter({
     { id: "IEP", title: "IEP" },
     { id: "504", title: "504" },
     { id: "FRL", title: "FRL" },
-    { id: "School Calendar", title: "School Calendar" },
+    { id: "School", title: "School" },
   ],
 });
 
@@ -159,7 +164,7 @@ const createStudentFRLChecker = (studentsFRL) => {
 };
 
 async function main(): Promise<void> {
-  // let limit = 100;
+  let limit = Infinity;
   const dupes = [];
   const data: GeoCodedStudent[] = [];
   const dataWithoutNeighbourhood: GeoCodedStudent[] = [];
@@ -168,29 +173,31 @@ async function main(): Promise<void> {
   } = {};
 
   try {
-    let students = await loadStudentsFromCSV("psm_non_frl_elementary.csv");
-    const studentsFRL = await loadStudentsFromCSV("psm_frl_elementary.csv");
+    let students = await loadStudentsFromCSV("psm_data_09_2024.csv");
 
-    const checkStudentFRL = createStudentFRLChecker(studentsFRL);
+    //const studentsFRL = await loadStudentsFromCSV("psm_frl_elementary.csv");
+
+    // const checkStudentFRL = createStudentFRLChecker(studentsFRL);
 
     for (let i = 0; i < students.length; i++) {
-      // if (i > limit) {
-      //   break;
-      // }
+      if (i > limit) {
+        break;
+      }
 
       const student = students[i];
       const name = `${student.First} ${student.Last}`;
       const address = `${student["Address 1"]} ${student["Address 2"]}`;
-      const grade = student.Grade;
+      const studentKey = `${name} ${address}`;
+      // const grade = student.Grade;
 
-      const frl = checkStudentFRL(student);
+      // const frl = checkStudentFRL(student);
 
       // Prevent Duplicate Names
-      if (studentNames[name] === true) {
+      if (studentNames[studentKey] === true) {
         dupes.push(student);
         continue;
       } else {
-        studentNames[name] = true;
+        studentNames[studentKey] = true;
       }
 
       const geocodedResult = await geocoder.geocode(address);
@@ -219,11 +226,11 @@ async function main(): Promise<void> {
           latitude: geocoded.latitude,
           longitude: geocoded.longitude,
           zipcode: geocoded.zipcode,
-          IEP: student["IEP Yes"] === 1,
-          "504": student["504 Yes"] === 1,
-          "School Calendar": student["School Calendar"],
+          IEP: student["IEP"] === "Yes",
+          "504": student["504"] === "Yes",
+          School: student.School,
           neighbourhood: neighborhood.properties.name,
-          FRL: frl,
+          FRL: student["FRL"] === "Yes",
         });
       } else {
         dataWithoutNeighbourhood.push({
@@ -233,11 +240,11 @@ async function main(): Promise<void> {
           latitude: geocoded.latitude,
           longitude: geocoded.longitude,
           zipcode: geocoded.zipcode,
-          IEP: student["IEP Yes"] === 1,
-          "504": student["504 Yes"] === 1,
-          "School Calendar": student["School Calendar"],
+          IEP: student["IEP"] === "Yes",
+          "504": student["504"] === "Yes",
+          School: student.School,
           neighbourhood: neighborhood?.properties.name,
-          FRL: frl,
+          FRL: student["FRL"] === "Yes",
         });
       }
     }

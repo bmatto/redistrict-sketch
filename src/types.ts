@@ -71,6 +71,7 @@ export interface School {
 export interface Neighborhood {
   name: string;
   students: Student[];
+  gradeLevelCounts?: Array<{ gradeLevel: number; count: number }>;
   school?: School;
   centroid: {
     lat: number;

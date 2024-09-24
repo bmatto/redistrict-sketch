@@ -5,6 +5,16 @@ import mapboxgl from "mapbox-gl";
 
 const query = gql`
   query MappingQuery {
+    schools {
+      name
+      lat
+      long
+      students {
+        latitude
+        longitude
+        School
+      }
+    }
     neighborhoods {
       name
       centroid {
@@ -49,6 +59,7 @@ export default function Map({
       container: mapRef.current,
       center: [-70.7626, 43.0718],
       zoom: 13,
+      style: "mapbox://styles/mapbox/streets-v11",
     });
 
     mapBoxRef.current.addControl(new mapboxgl.NavigationControl());
@@ -60,6 +71,16 @@ export default function Map({
       mapBoxRef.current.setFog({});
 
       const labels = {
+        type: "FeatureCollection",
+        features: [],
+      };
+
+      const schools = {
+        type: "FeatureCollection",
+        features: [],
+      };
+
+      const students = {
         type: "FeatureCollection",
         features: [],
       };
@@ -83,7 +104,7 @@ export default function Map({
           source: name,
           paint: {
             "fill-color": fillColor,
-            "fill-opacity": 0.66,
+            "fill-opacity": 0.5,
             "fill-outline-color": "#000",
           },
         });
@@ -116,6 +137,92 @@ export default function Map({
           "text-justify": "auto",
           "text-size": 14,
           "icon-image": ["get", "icon"],
+        },
+        paint: {
+          "text-color": "#fff",
+          "text-halo-color": "#000",
+          "text-halo-width": 1,
+          "text-halo-blur": 1,
+        },
+      });
+
+      data.schools.forEach((school) => {
+        const { name, lat, long } = school;
+
+        const id = `school-${name}`;
+
+        schools.features.push({
+          type: "Feature",
+          properties: {
+            description: name,
+          },
+          geometry: {
+            type: "Point",
+            coordinates: [long, lat],
+          },
+        });
+
+        school.students.forEach((student, index) => {
+          const { latitude, longitude } = student;
+
+          const id = `student-${index}-${latitude}-${longitude}`;
+
+          const studentSchool = student.School;
+
+          let color;
+          switch (studentSchool) {
+            case "Dondero":
+              color = "red";
+              break;
+            case "Little Harbour":
+              color = "blue";
+              break;
+            case "New Franklin":
+              color = "yellow";
+              break;
+            default:
+              color = "white";
+          }
+
+          mapBoxRef.current.addSource(id, {
+            type: "geojson",
+            data: {
+              type: "Feature",
+              geometry: {
+                type: "Point",
+                coordinates: [longitude, latitude],
+              },
+            },
+          });
+
+          mapBoxRef.current.addLayer({
+            id: id,
+            type: "circle",
+            source: id,
+            paint: {
+              "circle-radius": 2,
+              "circle-color": color,
+              "circle-stroke-color": "#000",
+              "circle-stroke-width": 1,
+            },
+          });
+        });
+      });
+
+      mapBoxRef.current.addSource("schools", {
+        type: "geojson",
+        data: schools,
+      });
+
+      mapBoxRef.current.addLayer({
+        id: "schools",
+        type: "symbol",
+        source: "schools",
+        layout: {
+          "icon-image": "school-15",
+          "icon-allow-overlap": true,
+          "icon-size": 2,
+          "text-field": ["get", "description"],
         },
         paint: {
           "text-color": "#fff",
