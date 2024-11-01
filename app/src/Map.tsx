@@ -39,7 +39,7 @@ const query = gql`
 
 mapboxgl.accessToken = import.meta.env.VITE_MAP_BOX_API_KEY;
 
-export default function Map({
+export default function MapBox({
   showAssignments = false,
 }: {
   showAssignments: boolean;
@@ -59,7 +59,7 @@ export default function Map({
       container: mapRef.current,
       center: [-70.7626, 43.0718],
       zoom: 13,
-      style: "mapbox://styles/mapbox/streets-v11",
+      style: "mapbox://styles/mapbox/streets-v12",
     });
 
     mapBoxRef.current.addControl(new mapboxgl.NavigationControl());
@@ -85,10 +85,24 @@ export default function Map({
         features: [],
       };
 
-      data.neighborhoods.forEach((neighborhood) => {
+      data.neighborhoods.forEach((neighborhood, index) => {
         const { name, centroid, school, feature } = neighborhood;
 
-        const fillColor = showAssignments ? school.properties.fill : "#000";
+        const shadesOfGray = [
+          "#2f2f2f",
+          "#3f3f3f",
+          "#4f4f4f",
+          "#5f5f5f",
+          "#6f6f6f",
+          "#7f7f7f",
+          "#8f8f8f",
+          "#9f9f9f",
+          "#afafaf",
+          "#bfbfbf",
+        ];
+        const fillColor = showAssignments
+          ? school.properties.fill
+          : shadesOfGray[5];
 
         mapBoxRef.current.addSource(name, {
           type: "geojson",
@@ -104,8 +118,18 @@ export default function Map({
           source: name,
           paint: {
             "fill-color": fillColor,
-            "fill-opacity": 0.5,
+            "fill-opacity": 0.7,
             "fill-outline-color": "#000",
+          },
+        });
+
+        mapBoxRef.current.addLayer({
+          id: `${name}-outline`,
+          type: "line",
+          source: name,
+          paint: {
+            "line-color": "#000",
+            "line-width": 2,
           },
         });
 
@@ -132,19 +156,18 @@ export default function Map({
         source: "labels",
         layout: {
           "text-field": ["get", "description"],
-          "text-variable-anchor": ["top", "bottom", "left", "right"],
-          "text-radial-offset": 0.5,
-          "text-justify": "auto",
           "text-size": 14,
-          "icon-image": ["get", "icon"],
+          "text-offset": [0, -1],
         },
         paint: {
           "text-color": "#fff",
           "text-halo-color": "#000",
-          "text-halo-width": 1,
-          "text-halo-blur": 1,
+          "text-halo-width": 3,
+          "text-halo-blur": 2,
         },
       });
+
+      if (!showAssignments) return;
 
       data.schools.forEach((school) => {
         const { name, lat, long } = school;
@@ -171,13 +194,13 @@ export default function Map({
 
           let color;
           switch (studentSchool) {
-            case "Dondero":
+            case "Dondero School":
               color = "red";
               break;
-            case "Little Harbour":
+            case "Little Harbour School":
               color = "blue";
               break;
-            case "New Franklin":
+            case "New Franklin School":
               color = "yellow";
               break;
             default:
@@ -233,20 +256,6 @@ export default function Map({
       });
     });
   }, [loading, data, showAssignments]);
-
-  // useEffect(() => {
-  //   // Initialize the map
-  //   mapBoxRef.current = new mapboxgl.Map({
-  //     container: mapRef.current,
-  //     center: [-70.7626, 43.0718],
-  //     zoom: 13,
-  //   });
-
-  //   mapBoxRef.current.addControl(new mapboxgl.NavigationControl());
-  //   mapBoxRef.current.addControl(new mapboxgl.FullscreenControl(), "top-right");
-  //   mapBoxRef.current.addControl(new mapboxgl.ScaleControl(), "top-left");
-  //   mapBoxRef.current.addControl(new mapboxgl.GeolocateControl(), "top-right");
-  // }, []);
 
   return (
     <div
