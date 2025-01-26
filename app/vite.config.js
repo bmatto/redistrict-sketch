@@ -15,6 +15,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         graphiql: resolve(__dirname, "graphiql.html"),
         map: resolve(__dirname, "map.html"),
+        plan: resolve(__dirname, "plan.html"),
       },
     },
   },
